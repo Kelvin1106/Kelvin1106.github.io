@@ -231,17 +231,22 @@ ul {
   <!-- Sidebar -->
   <aside class="experience-sidebar">
     <img src="{{ site.baseurl }}/assets/img/profile.png" alt="Profile photo" class="sidebar-profile-pic">
-    <h3 class="sidebar-profile-name">Chia-Yi (Charlie) Chin</h3>
-    <p class="sidebar-profile-title">Undergraduate student at National Taiwan University, specializing in Hardware & Software Co-Design for ML Accelerators, ASIC/FPGA VLSI Circuit Design, Distributed Computing for LLM Systems</p>
-    
+    <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
+    <p class="sidebar-profile-title">
+      Undergraduate student @ NTU <br>
+      Specializing in: <br>
+      ▪️Robotics for sensing, localization, and trajectory planning <br>
+      ▪️Vehicle dynamics & modeling <br>
+      ▪️Medical device prototyping & validation
+    </p>
     <ul class="sidebar-contact-info">
       <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
       <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
       <li><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
       <li><i class="fa-brands fa-linkedin"></i> <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
     </ul>
   </aside>
+
 
   <!-- Main Content -->
   <main class="experience-content">
@@ -361,3 +366,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
