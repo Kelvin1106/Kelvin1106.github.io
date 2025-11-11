@@ -26,8 +26,8 @@ permalink: /experience/
 }
 
 .sidebar-profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 20%;
   object-fit: cover;
   display: block;
@@ -230,7 +230,7 @@ ul {
 <div class="experience-container">
   <!-- Sidebar -->
   <aside class="experience-sidebar">
-    <img src="{{ site.baseurl }}/assets/img/profile.png" alt="Profile photo" class="sidebar-profile-pic">
+    <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
     <p class="sidebar-profile-title">
       Undergraduate student @ NTU <br>
@@ -375,6 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
