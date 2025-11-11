@@ -327,7 +327,7 @@ ul {
         <li>
             <div class="experience-item">
                 <div class="experience-header">
-                    <h4 class="position-title">Garmin Corporation, New Product Introduction</h4>
+                    <h4 class="position-title">New Product Introduction, Garmin Corporation</h4>
                     <p class="company-info">Engineer Intern</p>
                     <p class="duration">(Jul. 2024 – Jan. 2025)</p>
                 </div>
@@ -375,6 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
