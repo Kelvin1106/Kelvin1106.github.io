@@ -39,8 +39,8 @@ permalink: /
 }
 
 .sidebar-profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 20%;
   object-fit: cover;
   display: block;
@@ -305,6 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
