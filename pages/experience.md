@@ -251,7 +251,7 @@ ul {
   <!-- Main Content -->
   <main class="experience-content">
     <div class="experience-content-header">
-      <h2><i class="fa-solid fa-briefcase"></i> Research & Teaching & Working Experience</h2>
+      <h2><i class="fa-solid fa-briefcase"></i> Relative Experience</h2>
     </div>
 
     <!-- <nav class="experience-section-nav">
@@ -268,13 +268,16 @@ ul {
         <li>
             <div class="experience-item">
                 <div class="experience-header">
-                    <h4 class="position-title">Elsa Lab @ National Taiwan University</h4>
-                    <p class="company-info">Undergraduate Researcher (Advisor: Prof. Chun-Yi Lee)</p>
-                    <p class="duration">(Feb. 2025 – Present)</p>
+                    <h4 class="position-title">System Optimization Laboratory, National Taiwan University</h4>
+                    <p class="company-info">Undergraduate Researcher (Advisor: Prof. Kuei-Yuan Chan)</p>
+                    <p class="duration">(Sep. 2024 – Present)</p>
                 </div>
                 <div class="experience-description">
                     <ul>
-                        <li class="project-item"><strong>Project</strong>: Distributed Inference of LLM on Heterogeneous CPU/GPU Clusters</li>
+                        <li class="project-item"><strong>Project</strong>: Experimental Platform of a Scaled Autonomous Robotic Straddle Carrier for Port Operation Studies</li>
+                    </ul>
+                    <ul>
+                        <li class="project-item"><strong>Project</strong>: Foxtron Vehicle Technologies Industry-Academia Collaboration Project</li>
                     </ul>
                 </div>
             </div>
@@ -282,13 +285,13 @@ ul {
         <li>
             <div class="experience-item">
                 <div class="experience-header">
-                    <h4 class="position-title">Digital Circuits and Systems Lab (DCS Lab) @ National Taiwan University</h4>
-                    <p class="company-info">Research Scholarship Recipients (Advisor: Prof. Chia-Hsiang Yang)</p>
-                    <p class="duration">(Jan. 2024 – Jun. 2025)</p>
+                    <h4 class="position-title">Smart and Advanced Manufacturing Laboratory, National Taiwan University</h4>
+                    <p class="company-info">Undergraduate Researcher (Advisor: Prof. Dian-Ru Li)</p>
+                    <p class="duration">(Oct. 2022 – Present)</p>
                 </div>
                 <div class="experience-description">
                     <ul>
-                        <li class="project-item"><strong>Project of National Science and Technology Council (NSTC)</strong>: Design and implementation of a generative AI processor system integrated with High-Bandwidth-Memory architecture</li>
+                        <li class="project-item"><strong>Project</strong>: Double Lumen Catheter Stabilizer (Collaborator: Taipei Medical University)</li>
                     </ul>
                 </div>
             </div>
@@ -366,4 +369,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
