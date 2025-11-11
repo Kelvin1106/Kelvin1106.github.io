@@ -25,7 +25,7 @@ permalink: /
   margin: 3rem auto 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 360px minmax(0,1fr);  /* 280px → 360px（可再調大） */
+  grid-template-columns: 320px minmax(0,1fr);  /* 280px → 360px（可再調大） */
   column-gap: 2.5rem;
 }
 
@@ -308,6 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
