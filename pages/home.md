@@ -240,22 +240,22 @@ ul {
             </p>
             <h3 class="experience-section-title">Awards and Honors</h3>
             <p>
-            🏆 Jul 2023  
+            🏆 Jul 2023 - 
             <a href="https://www.fstaiwan.net/" 
                 style="color:#006666; font-weight:bold; font-style:italic; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
                 onmouseout="this.style.textDecoration='none';">
                 Formula Student Taiwan
-            </a>1st Overall as Aerodynamics Lead !
+            </a>1st Overall as <strong>Aerodynamics Lead</strong> !
             </p>
             <p>
-            🏆 Jun 2025 – Accepted as a participant in 
-            <a href="https://www.hpcadvisorycouncil.com/events/2025/APAC-AI-HPC/" 
+            🥈 Aug 2022 – 
+            <a href="https://www.fstaiwan.net/" 
                 style="color:#006666; font-weight:bold; font-style:italic; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
                 onmouseout="this.style.textDecoration='none';">
-                2025 APAC HPC-AI Competition
-            </a>!
+                Formula Student Taiwan
+            </a>2nd Overall !
             </p>
             <p>
             🏆 May 2025 – Accepted as a participant in 
@@ -302,3 +302,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
