@@ -236,8 +236,8 @@ ul {
             <p>
            Hello! I am Kai-Hua (Kelvin) Wang, an undergraduate in Mechanical Engineering at National Taiwan University, with an expected graduation date of January 2026.
            My research interests include 
-            <strong>robotics for sensing, localization, and trajectory planning</strong>, 
-            <strong>vehicle dynamics and modeling</strong>, and 
+            <strong>robotics for sensing, localization, and trajectory planning</strong>;
+            <strong>vehicle dynamics and modeling</strong>; and 
             <strong>medical device prototyping and validation</strong>.
             </p>
             <p>
@@ -305,6 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
