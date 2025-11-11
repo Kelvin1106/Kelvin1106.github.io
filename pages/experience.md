@@ -12,7 +12,7 @@ permalink: /experience/
   margin: 3rem auto 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 300px 1fr;
   /* gap: 3rem; */
 }
 
@@ -359,4 +359,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 </script>
