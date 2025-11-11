@@ -132,10 +132,10 @@ permalink: /publications/
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
     <p class="sidebar-profile-title">
       Undergraduate student @ NTU <br>
-      Specializing in <br>
-      Robotics for sensing, localization, and trajectory planning <br>
-      Vehicle dynamics & modeling <br>
-      Medical device prototyping & validation
+      Specializing in: <br>
+      ▪️Robotics for sensing, localization, and trajectory planning <br>
+      ▪️Vehicle dynamics & modeling <br>
+      ▪️Medical device prototyping & validation
     </p>
     <ul class="sidebar-contact-info">
       <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
@@ -176,6 +176,7 @@ permalink: /publications/
 <script>
 /* no nav tabs on this page; keep for future use if needed */
 </script>
+
 
 
 
