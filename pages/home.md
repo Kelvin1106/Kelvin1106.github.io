@@ -203,13 +203,13 @@ ul {
   <!-- Sidebar -->
   <aside class="experience-sidebar">
     <img src="{{ site.baseurl }}/assets/img/profile.png" alt="Profile photo" class="sidebar-profile-pic">
-    <h3 class="sidebar-profile-name">Chia-Yi (Charlie) Chin</h3>
+    <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
     <ul class="sidebar-contact-info">
       <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
       <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
       <li><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
       <li><i class="fa-brands fa-linkedin"></i> <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
     </ul>
   </aside>
 
@@ -292,5 +292,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
