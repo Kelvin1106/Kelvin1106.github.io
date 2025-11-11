@@ -155,21 +155,9 @@ permalink: /publications/
     <ol class="pub-list">
       <li>
         <span class="pub-title">HemoSeal Stabilizer for double-lumen hemodialysis catheter exchange: design and simulator-based evaluation</span>.
-        <strong>Kai-Hua (Kelvin) Wang</strong>, <span>et al.</span>
-        <span class="pub-venue">Journal manuscript in preparation</span>
+        <strong>Kai-Hua, Wang</strong>, <span>et al.</span>
+        <span class="pub-venue">Journal manuscript in preparation</span> , Advisor: Dian-Ru Li 
         <span class="pub-badge">medical devices</span>
-      </li>
-      <li>
-        <span class="pub-title">Perception-health–aware motion primitives for straddle-carrier AMR trajectory planning in cluttered port environments</span>.
-        <strong>Kai-Hua (Kelvin) Wang</strong>, <span>et al.</span>
-        <span class="pub-venue">Conference manuscript in preparation</span>
-        <span class="pub-badge">robotics</span>
-      </li>
-      <li>
-        <span class="pub-title">A Simulink-based 3D vehicle dynamics and safety envelope for cone-based AV validation</span>.
-        <strong>Kai-Hua (Kelvin) Wang</strong>, <span>et al.</span>
-        <span class="pub-venue">Conference manuscript in preparation</span>
-        <span class="pub-badge">vehicle dynamics</span>
       </li>
     </ol>
 
@@ -186,3 +174,4 @@ permalink: /publications/
 <script>
 /* no nav tabs on this page; keep for future use if needed */
 </script>
+
