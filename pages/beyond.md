@@ -26,8 +26,8 @@ permalink: /beyond/
 }
 
 .sidebar-profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 20%;
   object-fit: cover;
   display: block;
@@ -232,7 +232,7 @@ ul {
 <div class="experience-container">
     <!-- Sidebar -->
     <aside class="experience-sidebar">
-        <img src="{{ site.baseurl }}/assets/img/profile.png" alt="Profile photo" class="sidebar-profile-pic">
+        <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
         <h3 class="sidebar-profile-name">Chia-Yi (Charlie) Chin</h3>
         <p class="sidebar-profile-title">Undergraduate student at National Taiwan University, specializing in Hardware & Software Co-Design for ML Accelerators, ASIC/FPGA VLSI Circuit Design, Distributed Computing for LLM Systems</p>
         <ul class="sidebar-contact-info">
@@ -275,3 +275,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
