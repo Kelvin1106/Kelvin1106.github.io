@@ -155,7 +155,7 @@ permalink: /publications/
     <ol class="pub-list">
       <li>
         <span class="pub-title">HemoSeal Stabilizer for double-lumen hemodialysis catheter exchange: design and simulator-based evaluation</span>.
-        <strong>Kai-Hua, Wang</strong>, <span>et al.</span>
+        <strong>Kai-Hua Wang</strong>, <span>et al.</span>
         <span class="pub-venue">Journal manuscript in preparation</span> , Advisor: Dian-Ru Li 
         <span class="pub-badge">medical devices</span>
       </li>
@@ -174,4 +174,5 @@ permalink: /publications/
 <script>
 /* no nav tabs on this page; keep for future use if needed */
 </script>
+
 
