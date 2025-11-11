@@ -7,6 +7,19 @@ permalink: /
 <style>
 /* Experience Page Specific Styles */
 
+  .sidebar-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-contact-info a {
+  white-space: nowrap;          /* 不換行 */
+  overflow: hidden;             /* 超出就截斷 */
+  text-overflow: ellipsis;      /* 加省略號 */
+  min-width: 0;                 /* flex 裡讓省略號生效 */
+  display: inline-block;
+}
 .experience-container {
   max-width: 1300px;
   margin: 3rem auto 0 auto;
@@ -292,6 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
