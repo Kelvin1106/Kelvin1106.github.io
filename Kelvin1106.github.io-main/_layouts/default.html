@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- 頂部導航欄 -->
+  <nav class="top-nav">
+    <div class="nav-left">
+      <div class="nav-name">{{ site.title }}</div>
+    </div>
+    <div class="nav-right">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}class="active"{% endif %}>Experience</a>
+      <a href="{{ '/awards/' | relative_url }}" {% if page.url == '/awards/' %}class="active"{% endif %}>Awards</a>
+      <a href="{{ '/beyond/' | relative_url }}" {% if page.url == '/beyond/' %}class="active"{% endif %}>Beyond</a>
+    </div>
+  </nav>
+
+  <div>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+
+  <!-- 底部區域 -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="last-update">
+        Last updated: {{ site.time | date: "%B %d, %Y" }}
+      </div>
+        
+      <div class="copyright">
+       © {{ 'now' | date: "%Y" }} Chia-Yi (Charlie). Powered by 
+        <a href="https://jekyllrb.com/" style="color: inherit; text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Jekyll</a> & 
+        <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" style="color: inherit; text-decoration: none;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Minimal Mistakes</a>.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
