@@ -131,6 +131,7 @@ permalink: /publications/
     <img src="{{ site.baseurl }}/assets/img/profile.png" alt="Profile photo" class="sidebar-profile-pic">
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
     <p class="sidebar-profile-title">
+      Undergraduate student @ NTU, specializing in 
       Robotics for sensing, localization, and trajectory planning ·
       Vehicle dynamics & modeling ·
       Medical device prototyping & validation
@@ -174,5 +175,6 @@ permalink: /publications/
 <script>
 /* no nav tabs on this page; keep for future use if needed */
 </script>
+
 
 
