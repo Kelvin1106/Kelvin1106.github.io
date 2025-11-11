@@ -235,13 +235,11 @@ ul {
         <section id="research">
             <h3 class="experience-section-title">About Me</h3>
             <p>
-            Hello! 👋 My name is Kai-Hua (Kelvin) Wang. I am currently an undergraduate student 
-            in the Department of Mechanical Engineering at National Taiwan University, 
-            expecting to graduate in January 2026. 
-            My research interests include 
-            <strong>Robotics, sensing, and localization</strong>, 
-            <strong>Vehicle dynamics and modeling</strong>, and 
-            <strong>Medical devices and prototyping</strong>.
+           Hello! I am Kai-Hua (Kelvin) Wang, an undergraduate in Mechanical Engineering at National Taiwan University, with an expected graduation date of January 2026.
+           My research interests include 
+            <strong>robotics for sensing, localization, and trajectory planning</strong>, 
+            <strong>vehicle dynamics and modeling</strong>, and 
+            <strong>medical device prototyping and validation</strong>.
             </p>
             <p>
             For detailed information:
@@ -308,6 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
