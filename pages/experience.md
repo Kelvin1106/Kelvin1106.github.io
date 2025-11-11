@@ -299,13 +299,13 @@ ul {
         <li>
             <div class="experience-item">
                 <div class="experience-header">
-                    <h4 class="position-title">Digital Image and Signal Processing Lab (DISP Lab) @ National Taiwan University</h4>
-                    <p class="company-info">Undergraduate Researcher (Advisor: Prof. Jian-Jiun Ding)</p>
-                    <p class="duration">(Mar. 2024 – Dec. 2024)</p>
+                    <h4 class="position-title">NTU Racing (Formula SAE), National Taiwan University</h4>
+                    <p class="company-info">Head of Aerodynamics Department</p>
+                    <p class="duration">(Jul. 2022 – Jul. 2023)</p>
                 </div>
                 <div class="experience-description">
                     <ul>
-                        <li class="project-item"><strong>Project</strong>: Time-Frequency Analysis of Music Signal with Color Noise</li>
+                        <li class="project-item">Led a team of seven to design and manufacture the aero kits</li>
                     </ul>
                 </div>
             </div>
@@ -315,7 +315,10 @@ ul {
     <!-- Teaching Experience Section -->
     <h3 class="experience-section-title">Teaching Experience (Teaching Assistant)</h3>
     <ul>
-      <li class="course-title">CSIE5213 Parallel Programming (Fall 2025), National Taiwan University</li>
+      <li class="course-title">ME5024 Design and Practice of Intelligent Vehicles (I) (Fall 2025), National Taiwan University</li>
+    </ul>
+    <ul>
+      <li class="course-title">ME5025 Design and Practice of Intelligent Vehicles (II) (Spring 2024), National Taiwan University</li>
     </ul>
 
     <!-- Working Experience Section -->
@@ -324,13 +327,16 @@ ul {
         <li>
             <div class="experience-item">
                 <div class="experience-header">
-                    <h4 class="position-title">Academia Sinica Research Center</h4>
-                    <p class="company-info">Research Scholarship Recipients in Information Technology Innovation Research Center (Mentor: Dr. Hsiang-Yun Cheng)</p>
-                    <p class="duration">(Sep. 2025 – Present)</p>
+                    <h4 class="position-title">Garmin Corporation, New Product Introduction</h4>
+                    <p class="company-info">Engineer Intern</p>
+                    <p class="duration">(Jul. 2024 – Jan. 2025)</p>
                 </div>
                 <div class="experience-description">
                     <ul>
-                        <li class="project-item"><strong>Project of National Science and Technology Council (NSTC)</strong>: Transcending Intelligence with Transformer Acceleration using Near-Storage and In-Memory Chiplet-based Computing</li>
+                        <li class="project-item"><strong>Pressing Process Standardization</strong>: Standardized assembly processes for handheld device displays, achieving at least IPX7 waterproof standards</li>
+                    </ul>
+                    <ul>
+                        <li class="project-item"><strong>GPSMAP H1 accessory</strong>: Executed manufacturing process design using Therblig analysis, process failure mode and effects analysis(PFMEA), and fixture development</li>
                     </ul>
                 </div>
             </div>
@@ -369,5 +375,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
