@@ -219,34 +219,34 @@ ul {
         <section id="research">
             <h3 class="experience-section-title">About Me</h3>
             <p>
-            Hello! 👋 My name is Chia-Yi (Charlie) Chin. I am currently an undergraduate student 
-            in the Department of Electrical Engineering at National Taiwan University, 
+            Hello! 👋 My name is Kai-Hua (Kelvin) Wang. I am currently an undergraduate student 
+            in the Department of Mechanical Engineering at National Taiwan University, 
             expecting to graduate in January 2026. 
             My research interests include 
-            <strong>Hardware & Software Co-Design for ML Accelerators</strong>, 
-            <strong>ASIC/FPGA VLSI Circuit Design</strong>, and 
-            <strong>Distributed Computing for LLM Systems</strong>.
+            <strong>Robotics, sensing, and localization</strong>, 
+            <strong>Vehicle dynamics and modeling</strong>, and 
+            <strong>Medical devices and prototyping</strong>.
             </p>
             <p>
             For detailed information:
-            <a href="assets/CV-Charlie.pdf" 
+            <a href="assets/Kai_Hua_Wang_s_CV.pdf" 
                 target="_blank" 
                 rel="noopener"
                 style="color:#006666; font-weight:bold; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
                 onmouseout="this.style.textDecoration='none';">
-                📄 CV (as of August, 2025)
+                📄 CV (as of October, 2025)
             </a>
             </p>
-            <h3 class="experience-section-title">Recent News</h3>
+            <h3 class="experience-section-title">Awards and Honors</h3>
             <p>
-            🏆 Jun 2025 – Accepted as a participant in 
-            <a href="https://sc25.supercomputing.org/students/student-cluster-competition/" 
+            🏆 Jul 2023  
+            <a href="https://www.fstaiwan.net/" 
                 style="color:#006666; font-weight:bold; font-style:italic; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
                 onmouseout="this.style.textDecoration='none';">
-                Student Cluster Final Competition (SCC25)
-            </a>, St. Louis, USA !
+                Formula Student Taiwan
+            </a>1st Overall as Aerodynamics Lead !
             </p>
             <p>
             🏆 Jun 2025 – Accepted as a participant in 
@@ -300,4 +300,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 </script>
