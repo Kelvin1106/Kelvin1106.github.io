@@ -25,8 +25,8 @@ permalink: /
   margin: 3rem auto 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 280px 1fr;
-  /* gap: 3rem; */
+  grid-template-columns: 360px minmax(0,1fr);  /* 280px → 360px（可再調大） */
+  column-gap: 2.5rem;
 }
 
 .experience-sidebar {
@@ -71,6 +71,9 @@ permalink: /
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
   color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .sidebar-contact-info i {
@@ -305,6 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
