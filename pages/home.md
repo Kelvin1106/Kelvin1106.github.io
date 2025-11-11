@@ -248,7 +248,7 @@ ul {
                 style="color:#006666; font-weight:bold; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
                 onmouseout="this.style.textDecoration='none';">
-                📄 CV (as of October, 2025)
+                CV (as of October, 2025)
             </a>
             </p>
             <h3 class="experience-section-title">Awards and Honors</h3>
@@ -305,6 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
 
 
