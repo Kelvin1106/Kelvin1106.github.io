@@ -240,7 +240,7 @@ ul {
             </p>
             <h3 class="experience-section-title">Awards and Honors</h3>
             <p>
-            🏆 Jul 2023 - 
+            🏆 Jul 2023 -
             <a href="https://www.fstaiwan.net/" 
                 style="color:#006666; font-weight:bold; font-style:italic; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
@@ -249,7 +249,7 @@ ul {
             </a>1st Overall as <strong>Aerodynamics Lead</strong> !
             </p>
             <p>
-            🥈 Aug 2022 – 
+            🥈 Aug 2022 - 
             <a href="https://www.fstaiwan.net/" 
                 style="color:#006666; font-weight:bold; font-style:italic; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
@@ -257,22 +257,12 @@ ul {
                 Formula Student Taiwan
             </a>2nd Overall !
             </p>
-            <p>
-            🏆 May 2025 – Accepted as a participant in 
-            <a href="https://www.asc-events.net/StudentChallenge/ASC25/Register.php" 
-                style="color:#006666; font-weight:bold; font-style:italic; text-decoration:none;"
-                onmouseover="this.style.textDecoration='underline';"
-                onmouseout="this.style.textDecoration='none';">
-                Supercomputer Challenge Final Competition (ASC25)
-            </a>, Qinghai, China !
-            </p>
             <h3 class="experience-section-title">Education</h3>
             <ul>
                 <li>
                     <strong>B.S. at National Taiwan University, Taiwan</strong>
                     <ul>
-                        <li>Electrical Engineering, 2022 – 2026 (expected)</li>
-                        <li>Mechanical Engineering, 2021 – 2022 (transferred tracks)</li>
+                        <li>Mechanical Engineering, 2021 – 2026 (Expected)</li>
                     </ul>
                 </li>
             </ul>
@@ -302,4 +292,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
+
 
