@@ -152,14 +152,9 @@ permalink: /publications/
     </div>
 
     <!-- In preparation -->
-    <h3 class="experience-section-title">Submmied</h3>
+    <h3 class="experience-section-title">To be updated...</h3>
     <ol class="pub-list">
-      <li>
-        <span class="pub-title">Development of a Novel Vascular Access Stabilizer for Safe and Guidewire-Free Exchange of Hemodialysis Catheters with Reduced Fluid Leakage.</span>.
-        <strong>Kai-Hua Wang</strong>, <span>et al.</span>
-        <span class="pub-venue">Annals of Biomedical Engineering.</span> , Advisor: Dian-Ru Li 
-        <span class="pub-badge">medical devices</span>
-      </li>
+
     </ol>
 
     <!-- 之後要新增 peer-reviewed 或 preprints，可在這裡再加區塊 -->
@@ -175,6 +170,7 @@ permalink: /publications/
 <script>
 /* no nav tabs on this page; keep for future use if needed */
 </script>
+
 
 
 
