@@ -10,8 +10,10 @@ permalink: /experience/
 body {
   background-color: #F8F9FA;
   color: #2D3748;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
+  -webkit-font-smoothing: antialiasing;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .experience-container {
@@ -40,6 +42,7 @@ body {
   height: 180px;
   border-radius: 12px;
   object-fit: cover;
+  object-position: center 20%;   /* 與 home.md 同步垂直焦點 */
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid #F8F9FA;
@@ -50,7 +53,7 @@ body {
   font-weight: 800;
   margin-bottom: 0.25rem;
   color: #1A202C;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;       /* 緊縮字距，消除圓潤感 */
   text-align: center;
 }
 
@@ -61,6 +64,7 @@ body {
   line-height: 1.5;
   text-align: center;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .sidebar-contact-info {
@@ -113,7 +117,7 @@ body {
   margin: 0;
   font-size: 1.3rem;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -131,7 +135,7 @@ body {
   color: #1A202C;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
 }
 
 .experience-section-title:first-of-type {
@@ -160,7 +164,7 @@ body {
   font-weight: 800;
   font-size: 1.1rem;
   margin: 0 0 0.25rem 0;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .company-info {
