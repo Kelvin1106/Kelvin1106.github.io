@@ -4,11 +4,13 @@
 
 /* 全域設定 */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   color: #2D3748;
   margin: 0;
   background-color: #F8F9FA; /* 冷冽高級灰白底色 */
+  -webkit-font-smoothing: antialiasing; /* 讓字體邊緣纖細銳利 */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 頂部導航欄 (Top Navigation Bar) */
@@ -38,8 +40,7 @@ body {
   font-weight: 800;      /* 極簡俐落字重 */
   color: #1A202C;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em; /* 緊縮字距，增強機甲/工藝感 */
 }
 
 .nav-title {
@@ -47,7 +48,7 @@ body {
   color: #718096;
   margin: 2px 0 0 0;
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: 0.01em;
 }
 
 .nav-right {
@@ -62,6 +63,7 @@ body {
   text-decoration: none;
   font-size: 0.95rem;     
   font-weight: 600;
+  letter-spacing: -0.01em;
   transition: color 0.2s ease;
   position: relative;
   padding: 5px 0;
@@ -125,7 +127,7 @@ body {
   color: #1A202C;
   margin: 10px 0;
   white-space: nowrap;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .subtitle {
@@ -133,6 +135,7 @@ body {
   color: #718096;
   margin: 5px 0 15px 0;
   white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
 /* 聯絡資訊 */
@@ -181,18 +184,17 @@ body {
   text-decoration: underline;
 }
 
-/* 右邊內容區 */
+/* 右邊內容區標題 */
 .content h2 {
   margin-top: 10px;
   border-bottom: 1px solid #E2E8F0;
   padding-bottom: 8px;
   color: #1A202C;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
 }
 
 .project-item {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -221,7 +223,7 @@ body {
   color: #1A202C;
   margin-bottom: 15px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.08em; /* 大寫標題拉開字距，展現高級感 */
 }
 
 .follow-links {
@@ -239,7 +241,7 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
   transition: color 0.2s ease;
 }
 
