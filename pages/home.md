@@ -5,9 +5,9 @@ permalink: /
 ---
 
 <style>
-/* Base Background & Typography Optimization */
+/* Base Background & Monochrome Typography Optimization */
 body {
-  background-color: #F4F6F8;
+  background-color: #F8F9FA;
   color: #2D3748;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
@@ -35,8 +35,8 @@ body {
 }
 
 .sidebar-contact-info a:hover {
-  color: #FF4D00;               /* 大迫傑/運動感 鮮明橘色點綴 */
-  text-decoration: none;
+  color: #1A202C;               /* 極簡深黑 Hover */
+  text-decoration: underline;
 }
 
 .sidebar-contact-info i {
@@ -53,7 +53,7 @@ body {
   column-gap: 2.5rem;
 }
 
-/* 側邊欄卡片化（俐落圓角與懸浮陰影） */
+/* 側邊欄卡片化（俐落圓角與柔和懸浮陰影） */
 .experience-sidebar {
   background: #FFFFFF;
   border-radius: 10px;
@@ -61,23 +61,23 @@ body {
   height: fit-content;
   position: sticky;
   top: 120px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .sidebar-profile-pic {
   width: 180px;
   height: 180px;
-  border-radius: 12px;           /* 改為俐落的極簡方圓形 */
+  border-radius: 12px;           /* 俐落的現代方圓形 */
   object-fit: cover;
   display: block;
   margin: 0 auto 1.5rem auto;
-  border: 3px solid #F4F6F8;
+  border: 3px solid #F8F9FA;
 }
 
 .sidebar-profile-name {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 0.25rem;
   color: #1A202C;
   letter-spacing: -0.02em;
@@ -90,7 +90,7 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .sidebar-contact-info {
@@ -103,7 +103,7 @@ body {
 .experience-content {
   background: #FFFFFF;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(226, 232, 240, 0.8);
   overflow: hidden;
   padding: 2.5rem;
@@ -131,21 +131,21 @@ body {
   font-size: 0.95rem;
   padding: 0.75rem 0;
   display: inline-block;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
 }
 
 .experience-section-nav a.active,
 .experience-section-nav a:hover {
   color: #1A202C;
-  border-bottom-color: #FF4D00; /* 加厚競技橘色底線 */
+  border-bottom-color: #1A202C; /* 沉穩極簡黑底線 */
   font-weight: 700;
 }
 
 /* Section Body Settings */
 .experience-section-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 800;
   margin-bottom: 1.25rem;
   margin-top: 2rem;
   color: #1A202C;
@@ -158,42 +158,26 @@ body {
   margin-top: 0;
 }
 
-/* 清單與自訂點綴符號 */
+/* 經典極簡 Bullet Point */
 ul {
-  padding-left: 0;
+  padding-left: 1.2rem;
   margin: 0;
-  list-style: none;
+  list-style-type: disc;
 }
 
 ul li {
-  position: relative;
-  padding-left: 1.2rem;
   margin-bottom: 0.5rem;
   color: #4A5568;
   line-height: 1.7;
 }
 
-ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.65em;
-  width: 5px;
-  height: 5px;
-  background-color: #FF4D00;   /* 自訂亮橘小矩形點綴 */
-  border-radius: 1px;
-}
-
-/* 內層 nested ul 不重複疊加樣式 */
+/* 內層 nested ul */
 ul ul {
   margin-top: 0.25rem;
+  list-style-type: circle;
 }
 
-ul ul li::before {
-  background-color: #A0AEC0;   /* 第二層點點改為質感灰色 */
-}
-
-/* Resume Button Styling */
+/* Resume Button Styling (極致黑白高對比) */
 .cv-btn-container {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -208,16 +192,28 @@ ul ul li::before {
   padding: 0.65rem 1.25rem;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-decoration: none !important;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
 }
 
 .cv-button:hover {
-  background-color: #FF4D00;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 77, 0, 0.25);
+  background-color: #2D3748;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* 簡約連結樣式 */
+.inline-link {
+  color: #1A202C;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #718096;
 }
 
 /* Responsive Design */
@@ -264,7 +260,7 @@ ul ul li::before {
       <!-- About Me Section -->
       <h3 class="experience-section-title">About Me</h3>
       <p style="line-height: 1.7; color: #4A5568;">
-        Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
+        Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>, where I conduct research in the <strong>TRIO Lab</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
       </p>
       <p style="line-height: 1.7; color: #4A5568;">
         My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
@@ -312,7 +308,7 @@ ul ul li::before {
         <a href="https://www.fstaiwan.net/" 
            target="_blank"
            rel="noopener"
-           style="color:#FF4D00; font-weight:bold; font-style:italic; text-decoration:none;">
+           class="inline-link">
           Formula Student Taiwan
         </a> 
         1st Overall as <strong>Aerodynamics Lead</strong>!
@@ -322,7 +318,7 @@ ul ul li::before {
         <a href="https://www.fstaiwan.net/" 
            target="_blank"
            rel="noopener"
-           style="color:#FF4D00; font-weight:bold; font-style:italic; text-decoration:none;">
+           class="inline-link">
           Formula Student Taiwan
         </a> 
         2nd Overall!
