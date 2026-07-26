@@ -36,11 +36,11 @@ body {
 }
 
 .nav-name {
-  font-size: 1.2rem;
-  font-weight: 800;      /* 極簡俐落字重 */
+  font-size: 1.15rem;
+  font-weight: 700;      /* 極簡俐落字重 */
   color: #1A202C;
   margin: 0;
-  letter-spacing: -0.03em; /* 緊縮字距，增強機甲/工藝感 */
+  letter-spacing: -0.02em; /* 緊縮字距，增強機甲/工藝感 */
 }
 
 .nav-title {
