@@ -5,12 +5,12 @@ permalink: /experience/
 ---
 
 <style>
-/* Experience Page Monochrome Styles */
+/* Experience Page Monochrome Styles - Refined Sharpness */
 
 body {
   background-color: #F8F9FA;
   color: #2D3748;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiasing;
   -moz-osx-font-smoothing: grayscale;
@@ -42,7 +42,7 @@ body {
   height: 180px;
   border-radius: 12px;
   object-fit: cover;
-  object-position: center 20%;   /* 與 home.md 同步垂直焦點 */
+  object-position: center 20%;
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid #F8F9FA;
@@ -50,10 +50,10 @@ body {
 
 .sidebar-profile-name {
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;              /* 降低字重，擺脫臃腫感 */
   margin-bottom: 0.25rem;
   color: #1A202C;
-  letter-spacing: -0.03em;       /* 緊縮字距，消除圓潤感 */
+  letter-spacing: -0.02em;
   text-align: center;
 }
 
@@ -108,16 +108,16 @@ body {
 }
 
 .experience-content-header {
-  background: #1A202C; /* 沉穩極簡黑 */
+  background: #1A202C;
   color: #FFFFFF;
-  padding: 1.5rem 2.5rem;
+  padding: 1.25rem 2.5rem;
 }
 
 .experience-content-header h2 {
   margin: 0;
-  font-size: 1.3rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -128,21 +128,21 @@ body {
 }
 
 .experience-section-title {
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;              /* 700 比原本的 800 銳利很多 */
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
   color: #1A202C;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .experience-section-title:first-of-type {
   margin-top: 0;
 }
 
-/* Experience Items Typography */
+/* Experience Items Typography - 關鍵精修區塊 */
 .experience-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
@@ -159,28 +159,30 @@ body {
   margin-bottom: 0.75rem;
 }
 
+/* 核心修正：機構/實驗室名稱降低粗細，線條變得極度俐落 */
 .position-title {
   color: #1A202C;
-  font-weight: 800;
-  font-size: 1.1rem;
-  margin: 0 0 0.25rem 0;
-  letter-spacing: -0.02em;
+  font-weight: 600;              /* 從原本臃腫的 800 改為精緻俐落的 600 */
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem 0;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
 
 .company-info {
   color: #4A5568;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   margin: 0 0 0.25rem 0;
 }
 
 .duration {
   color: #718096;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05em;        /* 時間改為小大寫 + 寬字距，展現高科技質感 */
 }
 
 /* 經典極簡 Bullet Points */
