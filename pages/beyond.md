@@ -5,242 +5,181 @@ permalink: /beyond/
 ---
 
 <style>
-/* Experience Page Specific Styles */
+/* Beyond Page Monochrome Styles - Refined Sharpness */
+
+body {
+  background-color: #F8F9FA;
+  color: #2D3748;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiasing;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .experience-container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 3rem auto 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  /* gap: 3rem; */
+  grid-template-columns: 300px minmax(0, 1fr);
+  column-gap: 2.5rem;
 }
 
+/* 側邊欄卡片化（完全對齊 home & experience） */
 .experience-sidebar {
-  background: white;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border-radius: 10px;
   padding: 2rem;
   height: fit-content;
   position: sticky;
   top: 120px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .sidebar-profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
   object-fit: cover;
+  object-position: center 20%;
   display: block;
-  margin: 0 auto; /* 水平置中 */
+  margin: 0 auto 1.5rem auto;
+  border: 3px solid #F8F9FA;
 }
 
 .sidebar-profile-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #1A202C;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .sidebar-profile-title {
-  color: #666;
+  color: #718096;
   margin-bottom: 2rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .sidebar-contact-info {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #4A5568;
 }
 
 .sidebar-contact-info i {
   width: 20px;
-  margin-right: 0.5rem;
-  color: #666;
+  color: #718096;
 }
 
 .sidebar-contact-info a {
-  color: #666;
+  color: #4A5568;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .sidebar-contact-info a:hover {
+  color: #1A202C;
   text-decoration: underline;
 }
 
+/* 主內容區 */
 .experience-content {
-  background: white;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  overflow: hidden;
 }
 
 .experience-content-header {
-  background: #6c757d;
-  color: white;
-  padding: 1.5rem 2rem;
-  border-radius: 12px 12px 0 0;
+  background: #1A202C; /* 沉穩極簡黑 */
+  color: #FFFFFF;
+  padding: 1.25rem 2.5rem;
 }
 
-.experience-section-nav {
-  background: #f8f9fa;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.experience-section-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.experience-content-header h2 {
   margin: 0;
-  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.experience-section-nav a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 500;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.experience-section-nav a.active {
-  color: #007bff;
-  border-bottom-color: #007bff;
-}
-
-.experience-section-nav a:hover:not(.active) {
-  color: #007bff;
-  opacity: 0.7;
-}
-
-.experience-section {
-  display: none;
-  /* padding: 2rem; */
-}
-
-.experience-section.active {
-  display: block;
+.experience-body {
+  padding: 2.5rem;
 }
 
 .experience-section-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  color: #1A202C;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E2E8F0;
+  letter-spacing: -0.02em;
+}
+
+.experience-section-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Beyond Page Specific Items */
+.beyond-item {
   margin-bottom: 2rem;
-  text-align: center;
-  color: #888;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #F1F5F9;
 }
 
-.experience-header {
-  margin-bottom: 1rem;
-}
-
-.position-title {
-  color: #007bff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.company-info {
-  color: #666;
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
-
-.duration {
-  color: #28a745;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-.experience-description {
-  color: #555;
-  line-height: 1.6;
-}
-
-ul {
-    padding-left: 20px; /* 保持縮排 */
-    margin: 0; /* 拿掉不必要的上下外距 */
-}
-
-.experience-description ul {
-  margin-left: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.experience-description li {
-  margin-bottom: 0.5rem;
-}
-
-/* Teaching Experience specific styles */
-.course-title {
-  color: #000306f4;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
-}
-
-.course-code {
-  color: #28a745;
-  font-weight: 500;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-}
-
-.semester {
-  color: #6c757d;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.responsibilities {
-  margin-top: 0.5rem;
+.beyond-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .experience-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .experience-sidebar {
     position: static;
   }
 
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .experience-section-nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
+  .experience-body {
+    padding: 1.5rem;
   }
 }
 </style>
 
 <!-- Main Container -->
 <div class="experience-container">
-    <!-- Sidebar -->
+  <!-- Sidebar -->
   <aside class="experience-sidebar">
     <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
-    <p class="sidebar-profile-title">
-      Undergraduate student @ NTU <br>
-      Specializing in: <br>
-      ▪️Robotics for sensing, localization, and trajectory planning <br>
-      ▪️Vehicle dynamics & modeling <br>
-      ▪️Medical device prototyping & validation
-    </p>
+    <p class="sidebar-profile-title">M.S. Student @ CMU ME</p>
     <ul class="sidebar-contact-info">
       <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
       <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
@@ -248,37 +187,21 @@ ul {
       <li><i class="fa-brands fa-linkedin"></i> <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
     </ul>
   </aside>
-    <!-- Main Content -->
-    <main class="experience-content">
+
+  <!-- Main Content -->
+  <main class="experience-content">
     <div class="experience-content-header">
-        <h2><i class="fa-solid fa-briefcase"></i> Hobbies & Interests</h2>
+      <h2><i class="fa-solid fa-compass"></i> Beyond the Lab</h2>
     </div>
-    <div class="experience-section active">
-        <h3 class="experience-section-title">🚧 To be updated...</h3>
+
+    <div class="experience-body">
+      <!-- Hobbies & Interests Section -->
+      <h3 class="experience-section-title">Endurance & Marathon</h3>
+      
+      <p style="line-height: 1.7; color: #4A5568;">
+        To be updated...
+      </p>
+
     </div>
-</main>
+  </main>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('.experience-section-nav a');
-  
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Remove active class from all links
-      navLinks.forEach(l => l.classList.remove('active'));
-      
-      // Add active class to clicked link
-      this.classList.add('active');
-      
-      // You can add section switching logic here
-      console.log('Switched to:', this.getAttribute('href'));
-    });
-  });
-});
-
-</script>
-
-
