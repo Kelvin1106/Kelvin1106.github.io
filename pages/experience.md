@@ -162,7 +162,7 @@ body {
 /* 核心修正：機構/實驗室名稱降低粗細，線條變得極度俐落 */
 .position-title {
   color: #1A202C;
-  font-weight: 600;              /* 從原本臃腫的 800 改為精緻俐落的 600 */
+  font-weight: 700;              /* 從原本臃腫的 800 改為精緻俐落的 600 */
   font-size: 1.05rem;
   margin: 0 0 0.35rem 0;
   letter-spacing: -0.01em;
