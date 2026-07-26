@@ -273,11 +273,17 @@ ul {
             <h3 class="experience-section-title">Education</h3>
             <ul>
                 <li>
-                    <strong>B.S. at National Taiwan University, Taiwan</strong>
-                    <ul>
-                        <li>Mechanical Engineering, 2021 – 2026 </li>
-                    </ul>
-                </li>
+                    <strong>M.S. in Mechanical Engineering</strong> — Carnegie Mellon University
+                 <ul>
+                      <li>Pittsburgh, PA, USA | Aug. 2026 – May 2028 (Expected)</li>
+                 </ul>
+                 </li>
+                 <li>
+                      <strong>B.S. in Mechanical Engineering</strong> — National Taiwan University
+                 <ul>
+                      <li>Taipei, Taiwan | Sep. 2021 – Jun. 2025</li>
+                   </ul>
+                  </li>
             </ul>
         </section>
         </div>
