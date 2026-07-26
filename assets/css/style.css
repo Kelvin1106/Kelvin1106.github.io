@@ -1,88 +1,202 @@
-/* 全域設定 */
+/* 全局設定：大迫傑極簡風格重構 */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #2D3748;
   margin: 0;
-  background: #fff;
+  background-color: #F4F6F8; /* 高級灰白背景 */
 }
 
-/* 頂部導航欄 */
+/* 頂部導航欄 (Top Banner / Navbar) */
 .top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
-  background: #fff;
+  border-bottom: 1px solid #E2E8F0;
+  background: rgba(244, 246, 248, 0.95); /* 半透明與背景融合 */
+  backdrop-filter: blur(8px);             /* 現代毛玻璃質感 */
   max-width: 1300px;
   margin: 0 auto;
   padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-left {
-  flex: 0 0 325px;   /* ✅ 跟 sidebar 一致 */
+  flex: 0 0 325px;       /* 跟 sidebar 一致 */
   display: flex;
   flex-direction: column;
 }
 
 .nav-name {
-  font-size: 1.3em;      /* 縮小字體 */
-  font-weight: 700;      /* 加粗 */
-  color: #333;
+  font-size: 1.2rem;
+  font-weight: 800;      /* 強烈極簡字重 */
+  color: #1A202C;
   margin: 0;
-  font-family: 'Georgia', 'Times New Roman', serif; /* 改為襯線字體 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .nav-title {
-  font-size: 0.85em;     /* 縮小字體 */
-  color: #666;
+  font-size: 0.85em;
+  color: #718096;
   margin: 2px 0 0 0;
-  font-weight: 500;      /* 稍微加粗 */
-  font-family: 'Georgia', 'Times New Roman', serif; /* 改為襯線字體 */
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .nav-right {
-  flex: 1;           /* ✅ 占滿剩餘空間 */
+  flex: 1;               /* 占滿剩餘空間 */
   display: flex;
-  justify-content: flex-start; /* 從左開始 */
+  justify-content: flex-start;
   gap: 30px;
 }
 
 .nav-right a {
-  color: #666;
+  color: #718096;
   text-decoration: none;
-  font-size: 1.1rem;     
-  font-weight: 400;
+  font-size: 0.95rem;     
+  font-weight: 600;
   transition: color 0.2s ease;
   position: relative;
   padding: 5px 0;
 }
 
-.nav-right a:hover {
-  color: #333;
+.nav-right a:hover,
+.nav-right a.active {
+  color: #1A202C;
 }
 
-/* hover 底線效果：由中間往兩邊展開 */
+/* Hover 與 Active 底線效果：大迫傑競技橘線 (#FF4D00) 由中間展開 */
 .nav-right a::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 0;
-  height: 3px;
-  background-color: #666;
-  transition: all 0.3s ease;
+  height: 3px;           /* 加厚底線，更有跑道力量感 */
+  background-color: #FF4D00;
+  transition: all 0.25s ease-in-out;
   transform: translateX(-50%);
 }
 
-.nav-right a:hover::after {
+.nav-right a:hover::after,
+.nav-right a.active::after {
   width: 100%;
 }
 
-/* 底部區域 */
+/* 容器：左右兩欄 */
+.container {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px;    /* 減少上方 padding */
+}
+
+/* Sidebar 左邊欄 */
+.sidebar {
+  flex: 0 0 300px;       /* 增加寬度避免文字跨行 */   
+  border-right: 1px solid #E2E8F0;
+}
+
+/* 個人區塊 */
+.profile-container {
+  text-align: left;
+  margin: 0;
+}
+
+.profile-pic {
+  border-radius: 12px;   /* 俐落極簡圓角 */
+  width: 65%;        
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 5%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.sidebar h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #1A202C;
+  margin: 10px 0;
+  white-space: nowrap;   /* 防止名字跨行 */
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #718096;
+  margin: 5px 0 15px 0;
+  white-space: nowrap;   /* 防止職銜跨行 */
+}
+
+/* 聯絡資訊 */
+.sidebar-contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-contact-info li {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: #4A5568;
+}
+
+.sidebar-contact-info i {
+  width: 20px;
+  margin-right: 0.5rem;
+  color: #718096;
+}
+
+.sidebar-contact-info a {
+  color: #4A5568;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-contact-info a:hover {
+  color: #FF4D00;        /* Hover 亮橘色點綴 */
+  text-decoration: none;
+}
+
+.contact p {
+  margin: 5px 0;
+  white-space: nowrap;   /* 防止聯絡資訊跨行 */
+  overflow: hidden;      /* 隱藏超出部分 */
+  text-overflow: ellipsis; /* 超出時顯示省略號 */
+}
+
+.contact p a {
+  color: #4A5568;
+  text-decoration: none;
+}
+
+.contact p a:hover {
+  color: #FF4D00;
+  text-decoration: none;
+}
+
+/* 右邊內容區 */
+.content h2 {
+  margin-top: 10px;      /* 減少上方間距讓 About Me 往上移 */
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 8px;
+  color: #1A202C;
+  font-weight: 700;
+}
+
+.project-item {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 底部區域 (Footer) */
 .footer {
-  background: #f8f9fa;
-  border-top: 1px solid #eee;
+  background: #F4F6F8;
+  border-top: 1px solid #E2E8F0;
   padding: 30px 0;
   margin-top: 40px;
 }
@@ -98,9 +212,9 @@ body {
 }
 
 .follow-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1A202C;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -116,136 +230,34 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #666;
+  color: #718096;
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: color 0.2s ease;
 }
 
 .follow-links a:hover {
-  color: #333;
+  color: #FF4D00;        /* Hover 亮橘色點綴 */
 }
 
 .follow-links i {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .last-update {
-  color: #888;
+  color: #A0AEC0;
   font-size: 0.85rem;
   font-style: italic;
 }
 
 .copyright {
-  color: #888;
+  color: #A0AEC0;
   font-size: 0.85rem;
   padding-top: 10px;
-  border-top: 1px solid #ddd;
-}
-
-/* 容器：左右兩欄 */
-.container {
-  display: flex;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 20px 40px;    /* 減少上方 padding */
-}
-
-/* Sidebar 左邊欄 */
-.sidebar {
-  flex: 0 0 300px;       /* 增加寬度避免文字跨行 */   
-  border-right: 1px solid #eee;
-}
-
-/* 個人區塊 */
-.profile-container {
-  text-align: left;
-  margin: 0;
-}
-
-.profile-pic {
-  border-radius: 10px;
-  width: 65%;       
-  height: auto;
-  object-fit: cover;
-  display: block;
-  margin: 5%; /* 上右下左都用百分比，相對於父容器寬度 */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.sidebar h1 {
-  font-size: 1.4em;      /* 從 1.6em 縮小到 1.4em */
-  margin: 10px 0;
-  white-space: nowrap;   /* 防止名字跨行 */
-}
-
-.subtitle {
-  font-size: 1rem;
-  color: #555;
-  margin: 5px 0 15px 0;
-  white-space: nowrap;   /* 防止職銜跨行 */
-}
-
-/* 聯絡資訊 */
-.sidebar-contact-info {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar-contact-info li {
-  margin-bottom: 0.8rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.sidebar-contact-info i {
-  width: 20px;
-  margin-right: 0.5rem;
-  color: #666;
-}
-
-.sidebar-contact-info a {
-  color: #666;
-  text-decoration: none;
-}
-
-.sidebar-contact-info a:hover {
-  text-decoration: underline;
-}
-
-.contact p {
-  margin: 5px 0;
-  white-space: nowrap;   /* 防止聯絡資訊跨行 */
-  overflow: hidden;      /* 隱藏超出部分 */
-  text-overflow: ellipsis; /* 超出時顯示省略號 */
-}
-.contact p a {
-  color: #666;
-  text-decoration: none;
-}
-.contact p a:hover {
-  text-decoration: underline;
-}
-
-/* 右邊內容區 */
-/* .content {
-  flex: 1; 
-  padding-left: 30px;
-} */
-
-.content h2 {
-  margin-top: 10px;      /* 減少上方間距讓 About Me 往上移 */
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
-}
-
-.project-item {
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* 換成你想要的字體 */
-  font-size: 16px; /* 調整字體大小 */
-  line-height: 1.5; /* 讓排版更舒適 */
+  border-top: 1px solid #E2E8F0;
 }
 
 /* 手機排版 (RWD) */
@@ -253,16 +265,17 @@ body {
   .top-nav {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    padding: 15px 20px;
   }
   
   .nav-left {
     margin-left: 0;       /* 手機版移除左邊距 */
+    flex: 0 0 auto;
   }
   
   .nav-right {
-    margin-top: 15px;
-    gap: 20px;
+    margin-top: 12px;
+    gap: 15px;
     flex-wrap: wrap;
   }
   
@@ -270,12 +283,14 @@ body {
     flex-direction: column;
     padding: 20px;
   }
+
   .sidebar {
     border-right: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #E2E8F0;
     margin-bottom: 20px;
     padding-right: 0;
   }
+
   .content {
     padding-left: 0;
   }
