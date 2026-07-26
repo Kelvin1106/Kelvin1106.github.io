@@ -234,13 +234,19 @@ ul {
         <section id="research">
             <h3 class="experience-section-title">About Me</h3>
             <p>
-           Hello! I am Kai-Hua (Kelvin) Wang, an undergraduate in Mechanical Engineering at National Taiwan University, with an expected graduation date of January 2026.
-           My research interests include 
-            <strong>robotics for sensing, localization, and trajectory planning</strong>;
-            <strong>vehicle dynamics and modeling</strong>; and 
-            <strong>medical device prototyping and validation</strong>.
+              Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>, where I conduct research in the <strong>TRIO Lab</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
             </p>
             <p>
+              My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
+            </p>
+            <p><strong>Research Interests:</strong></p>
+            <ul>
+              <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning and human-aware autonomy</li>
+              <li><strong>Vehicle Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
+            </ul>
+            <p>
+              Outside the lab, I am an active marathon runner and endurance sports enthusiast—bringing the same discipline and persistence on the track to my engineering research.
+            </p>
             For detailed information:
             <a href="assets/Kai_Hua_Wang_s_CV.pdf" 
                 target="_blank" 
@@ -251,6 +257,18 @@ ul {
                 Resume
             </a>
             </p>
+<li>
+    <strong>Carnegie Mellon University</strong> — M.S. in Mechanical Engineering
+    <ul>
+        <li>Pittsburgh, PA, USA | Aug. 2026 – May 2028 (Expected)</li>
+    </ul>
+</li>
+<li>
+    <strong>National Taiwan University</strong> — B.S. in Mechanical Engineering
+    <ul>
+        <li>Taipei, Taiwan | Sep. 2021 – Jan. 2026</li>
+    </ul>
+</li>
             <h3 class="experience-section-title">Awards and Honors</h3>
             <p>
             🏆 Jul 2023 -
@@ -272,18 +290,7 @@ ul {
             </p>
             <h3 class="experience-section-title">Education</h3>
             <ul>
-<li>
-    <strong>Carnegie Mellon University</strong> — M.S. in Mechanical Engineering
-    <ul>
-        <li>Pittsburgh, PA, USA | Aug. 2026 – May 2028 (Expected)</li>
-    </ul>
-</li>
-<li>
-    <strong>National Taiwan University</strong> — B.S. in Mechanical Engineering
-    <ul>
-        <li>Taipei, Taiwan | Sep. 2021 – Jan. 2026</li>
-    </ul>
-</li>
+              
             </ul>
         </section>
         </div>
