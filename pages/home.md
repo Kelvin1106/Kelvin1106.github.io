@@ -5,7 +5,8 @@ permalink: /
 ---
 
 <style>
-/* Base Background & Monochrome Typography Optimization */
+/* Home & Experience Shared Monochrome Styles - Refined Sharpness */
+
 body {
   background-color: #F8F9FA;
   color: #2D3748;
@@ -13,37 +14,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiasing;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Sidebar Specific Styles */
-.sidebar-contact-info li {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.8rem;
-  font-size: 0.9rem;
-  color: #4A5568;
-}
-
-.sidebar-contact-info a {
-  white-space: nowrap;          /* 不換行 */
-  overflow: hidden;             /* 超出就截斷 */
-  text-overflow: ellipsis;      /* 加省略號 */
-  min-width: 0;                 /* flex 裡讓省略號生效 */
-  display: inline-block;
-  color: #4A5568;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.sidebar-contact-info a:hover {
-  color: #1A202C;               /* 極簡深黑 Hover */
-  text-decoration: underline;
-}
-
-.sidebar-contact-info i {
-  width: 20px;
-  color: #718096;
 }
 
 .experience-container {
@@ -55,7 +25,7 @@ body {
   column-gap: 2.5rem;
 }
 
-/* 側邊欄卡片化（與 experience.md 完全對齊） */
+/* 側邊欄卡片化（完全對齊 experience.md） */
 .experience-sidebar {
   background: #FFFFFF;
   border-radius: 10px;
@@ -70,39 +40,62 @@ body {
 .sidebar-profile-pic {
   width: 180px;
   height: 180px;
-  border-radius: 12px;           /* 俐落的現代方圓形 */
+  border-radius: 12px;
   object-fit: cover;
-  object-position: center 20%;   /* 微調垂直焦點，對齊 experience.md 留白 */
+  object-position: center 20%;   /* 微調垂直焦點，留出精準頭頂空間 */
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid #F8F9FA;
 }
 
-/* 修正：字重由臃腫的 800 改為精緻俐落的 700 */
 .sidebar-profile-name {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 700;              /* 700 字重，纖細俐落不臃腫 */
   margin-bottom: 0.25rem;
   color: #1A202C;
-  letter-spacing: -0.02em;       /* 纖細俐落字距 */
+  letter-spacing: -0.02em;
   text-align: center;
 }
 
 .sidebar-profile-title {
   color: #718096;
   margin-bottom: 2rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   text-align: center;
   font-weight: 500;
-  letter-spacing: 0.02em;        /* 稍微拉開字母間距，增加高科技機能感 */
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 .sidebar-contact-info {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.sidebar-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: #4A5568;
+}
+
+.sidebar-contact-info i {
+  width: 20px;
+  color: #718096;
+}
+
+.sidebar-contact-info a {
+  color: #4A5568;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-contact-info a:hover {
+  color: #1A202C;
+  text-decoration: underline;
 }
 
 /* 主內容區卡片化 */
@@ -115,44 +108,9 @@ body {
   padding: 2.5rem;
 }
 
-.experience-section-nav {
-  background: #FFFFFF;
-  padding: 0;
-  border-bottom: 1px solid #E2E8F0;
-  margin-bottom: 2rem;
-}
-
-.experience-section-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.experience-section-nav a {
-  text-decoration: none;
-  color: #718096;
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.75rem 0;
-  display: inline-block;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
-  letter-spacing: -0.01em;
-}
-
-.experience-section-nav a.active,
-.experience-section-nav a:hover {
-  color: #1A202C;
-  border-bottom-color: #1A202C; /* 沉穩極簡黑底線 */
-  font-weight: 700;
-}
-
-/* Section Body Settings */
 .experience-section-title {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 700;              /* 精緻幾何線條 */
   margin-bottom: 1.25rem;
   margin-top: 2rem;
   color: #1A202C;
@@ -165,7 +123,7 @@ body {
   margin-top: 0;
 }
 
-/* 經典極簡 Bullet Point */
+/* 經典極簡 Bullet Points */
 ul {
   padding-left: 1.2rem;
   margin: 0;
@@ -178,13 +136,12 @@ ul li {
   line-height: 1.7;
 }
 
-/* 內層 nested ul */
 ul ul {
   margin-top: 0.25rem;
   list-style-type: circle;
 }
 
-/* Resume Button Styling (極致黑白高對比) */
+/* Resume 按鈕元件 (home.md 專用高對比黑底) */
 .cv-btn-container {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -236,16 +193,26 @@ ul ul {
     position: static;
   }
 
-  .experience-section-nav ul {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .experience-section-nav a {
-    padding: 0.75rem 0;
+  .experience-content {
+    padding: 1.5rem;
   }
 }
 </style>
+
+<!-- Main Container -->
+<div class="experience-container">
+  <!-- Sidebar -->
+  <aside class="experience-sidebar">
+    <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
+    <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
+    <p class="sidebar-profile-title">M.S. Student @ CMU ME</p>
+    <ul class="sidebar-contact-info">
+      <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
+      <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
+      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+      <li><i class="fa-brands fa-linkedin"></i> <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+    </ul>
+  </aside>
 
 <!-- Main Container -->
 <div class="experience-container">
