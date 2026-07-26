@@ -9,13 +9,13 @@ permalink: /
 body {
   background-color: #F8F9FA;
   color: #2D3748;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiasing;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Experience Page Specific Styles */
+/* Sidebar Specific Styles */
 .sidebar-contact-info li {
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@ body {
   column-gap: 2.5rem;
 }
 
-/* 側邊欄卡片化（俐落圓角與柔和懸浮陰影） */
+/* 側邊欄卡片化（與 experience.md 完全對齊） */
 .experience-sidebar {
   background: #FFFFFF;
   border-radius: 10px;
@@ -72,29 +72,31 @@ body {
   height: 180px;
   border-radius: 12px;           /* 俐落的現代方圓形 */
   object-fit: cover;
-  object-position: center 20%;   /* 微調垂直焦點，留出精準頭頂空間 */
+  object-position: center 20%;   /* 微調垂直焦點，對齊 experience.md 留白 */
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid #F8F9FA;
 }
 
+/* 修正：字重由臃腫的 800 改為精緻俐落的 700 */
 .sidebar-profile-name {
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 0.25rem;
   color: #1A202C;
-  letter-spacing: -0.03em;       /* 緊縮字距，消除圓潤感 */
+  letter-spacing: -0.02em;       /* 纖細俐落字距 */
   text-align: center;
 }
 
 .sidebar-profile-title {
   color: #718096;
   margin-bottom: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   text-align: center;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;        /* 稍微拉開字母間距，增加高科技機能感 */
+  text-transform: uppercase;
 }
 
 .sidebar-contact-info {
@@ -149,14 +151,14 @@ body {
 
 /* Section Body Settings */
 .experience-section-title {
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;
   margin-bottom: 1.25rem;
   margin-top: 2rem;
   color: #1A202C;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .experience-section-title:first-of-type {
