@@ -248,7 +248,7 @@ ul {
                 style="color:#006666; font-weight:bold; text-decoration:none;"
                 onmouseover="this.style.textDecoration='underline';"
                 onmouseout="this.style.textDecoration='none';">
-                CV (as of October, 2025)
+                Resume
             </a>
             </p>
             <h3 class="experience-section-title">Awards and Honors</h3>
@@ -275,7 +275,7 @@ ul {
                 <li>
                     <strong>B.S. at National Taiwan University, Taiwan</strong>
                     <ul>
-                        <li>Mechanical Engineering, 2021 – 2026 (Expected)</li>
+                        <li>Mechanical Engineering, 2021 – 2026 </li>
                     </ul>
                 </li>
             </ul>
