@@ -244,7 +244,7 @@ body {
         <div class="experience-header">
           <h4 class="position-title">System Optimization Laboratory, National Taiwan University</h4>
           <p class="company-info">Undergraduate Researcher (Advisor: Prof. Kuei-Yuan Chan)</p>
-          <p class="duration">Sep. 2024 – Present</p>
+          <p class="duration">Sep. 2024 – Jan. 2026</p>
         </div>
         <div class="experience-description">
           <ul>
@@ -258,7 +258,7 @@ body {
         <div class="experience-header">
           <h4 class="position-title">Smart and Advanced Manufacturing Laboratory, National Taiwan University</h4>
           <p class="company-info">Undergraduate Researcher (Advisor: Prof. Dian-Ru Li)</p>
-          <p class="duration">Oct. 2022 – Present</p>
+          <p class="duration">Oct. 2022 – Jan. 2026</p>
         </div>
         <div class="experience-description">
           <ul>
