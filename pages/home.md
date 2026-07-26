@@ -9,8 +9,10 @@ permalink: /
 body {
   background-color: #F8F9FA;
   color: #2D3748;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
+  -webkit-font-smoothing: antialiasing;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Experience Page Specific Styles */
@@ -70,6 +72,7 @@ body {
   height: 180px;
   border-radius: 12px;           /* 俐落的現代方圓形 */
   object-fit: cover;
+  object-position: center 20%;   /* 微調垂直焦點，留出精準頭頂空間 */
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid #F8F9FA;
@@ -80,7 +83,7 @@ body {
   font-weight: 800;
   margin-bottom: 0.25rem;
   color: #1A202C;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;       /* 緊縮字距，消除圓潤感 */
   text-align: center;
 }
 
@@ -91,6 +94,7 @@ body {
   line-height: 1.5;
   text-align: center;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .sidebar-contact-info {
@@ -133,6 +137,7 @@ body {
   display: inline-block;
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
+  letter-spacing: -0.01em;
 }
 
 .experience-section-nav a.active,
@@ -151,7 +156,7 @@ body {
   color: #1A202C;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
 }
 
 .experience-section-title:first-of-type {
@@ -193,6 +198,7 @@ ul ul {
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.85rem;
+  letter-spacing: 0.01em;
   text-decoration: none !important;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 4px rgba(0,0,0,0.06);
@@ -265,7 +271,7 @@ ul ul {
       <p style="line-height: 1.7; color: #4A5568;">
         My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
       </p>
-      <p style="margin-top: 1rem; font-weight: 700; color: #1A202C;">Research Interests:</p>
+      <p style="margin-top: 1rem; font-weight: 800; color: #1A202C; letter-spacing: -0.02em;">Research Interests:</p>
       <ul>
         <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning and human-aware autonomy</li>
         <li><strong>Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
