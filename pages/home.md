@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <style>
-/* Home & Experience Shared Monochrome Styles - Refined Sharpness */
+/* Home Monochrome Styles - Refined Sharpness */
 
 body {
   background-color: #F8F9FA;
@@ -25,7 +25,7 @@ body {
   column-gap: 2.5rem;
 }
 
-/* 側邊欄卡片化（完全對齊 experience.md） */
+/* 側邊欄卡片化 */
 .experience-sidebar {
   background: #FFFFFF;
   border-radius: 10px;
@@ -42,7 +42,7 @@ body {
   height: 180px;
   border-radius: 12px;
   object-fit: cover;
-  object-position: center 20%;   /* 微調垂直焦點，留出精準頭頂空間 */
+  object-position: center 20%;
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid #F8F9FA;
@@ -50,7 +50,7 @@ body {
 
 .sidebar-profile-name {
   font-size: 1.25rem;
-  font-weight: 700;              /* 700 字重，纖細俐落不臃腫 */
+  font-weight: 700;
   margin-bottom: 0.25rem;
   color: #1A202C;
   letter-spacing: -0.02em;
@@ -110,7 +110,7 @@ body {
 
 .experience-section-title {
   font-size: 1.25rem;
-  font-weight: 700;              /* 精緻幾何線條 */
+  font-weight: 700;
   margin-bottom: 1.25rem;
   margin-top: 2rem;
   color: #1A202C;
@@ -141,7 +141,7 @@ ul ul {
   list-style-type: circle;
 }
 
-/* Resume 按鈕元件 (home.md 專用高對比黑底) */
+/* Resume 按鈕元件 */
 .cv-btn-container {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
@@ -201,22 +201,7 @@ ul ul {
 
 <!-- Main Container -->
 <div class="experience-container">
-  <!-- Sidebar -->
-  <aside class="experience-sidebar">
-    <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
-    <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
-    <p class="sidebar-profile-title">M.S. Student @ CMU ME</p>
-    <ul class="sidebar-contact-info">
-      <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
-      <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
-      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-      <li><i class="fa-brands fa-linkedin"></i> <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
-    </ul>
-  </aside>
-
-<!-- Main Container -->
-<div class="experience-container">
-  <!-- Sidebar -->
+  <!-- Sidebar (僅保留唯一一個) -->
   <aside class="experience-sidebar">
     <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
@@ -240,7 +225,7 @@ ul ul {
       <p style="line-height: 1.7; color: #4A5568;">
         My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
       </p>
-      <p style="margin-top: 1rem; font-weight: 800; color: #1A202C; letter-spacing: -0.02em;">Research Interests:</p>
+      <p style="margin-top: 1rem; font-weight: 700; color: #1A202C; letter-spacing: -0.02em;">Research Interests:</p>
       <ul>
         <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning and human-aware autonomy</li>
         <li><strong>Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
