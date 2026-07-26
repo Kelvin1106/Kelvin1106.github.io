@@ -235,7 +235,7 @@ ul {
         <!-- About Me Section -->
         <h3 class="experience-section-title">About Me</h3>
         <p>
-            Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>, where I conduct research in the <strong>TRIO Lab</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
+            Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
         </p>
         <p>
             My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
@@ -243,10 +243,10 @@ ul {
         <p><strong>Research Interests:</strong></p>
         <ul>
             <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning and human-aware autonomy</li>
-            <li><strong>Vehicle Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
+            <li><strong>Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
         </ul>
         <p>
-            Outside the lab, I am an active marathon runner and endurance sports enthusiast—bringing the same discipline and persistence on the track to my engineering research.
+            Outside the lab, I am an active marathon runner and endurance sports enthusiast. I bring the same discipline and persistence from the track to my engineering research.
         </p>
         <p>
             For detailed information: 
