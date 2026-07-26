@@ -5,223 +5,208 @@ permalink: /experience/
 ---
 
 <style>
-/* Experience Page Specific Styles */
+/* Experience Page Monochrome Styles */
+
+body {
+  background-color: #F8F9FA;
+  color: #2D3748;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
 
 .experience-container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 3rem auto 0 auto;
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  /* gap: 3rem; */
+  grid-template-columns: 300px minmax(0, 1fr);
+  column-gap: 2.5rem;
 }
 
+/* 側邊欄卡片化 */
 .experience-sidebar {
-  background: white;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border-radius: 10px;
   padding: 2rem;
   height: fit-content;
   position: sticky;
   top: 120px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .sidebar-profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 20%;
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
   object-fit: cover;
   display: block;
-  margin: 0 auto; /* 水平置中 */
+  margin: 0 auto 1.5rem auto;
+  border: 3px solid #F8F9FA;
 }
 
 .sidebar-profile-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  color: #1A202C;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .sidebar-profile-title {
-  color: #666;
+  color: #718096;
   margin-bottom: 2rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
 }
 
 .sidebar-contact-info {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #4A5568;
 }
 
 .sidebar-contact-info i {
   width: 20px;
-  margin-right: 0.5rem;
-  color: #666;
+  color: #718096;
 }
 
 .sidebar-contact-info a {
-  color: #666;
+  color: #4A5568;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .sidebar-contact-info a:hover {
+  color: #1A202C;
   text-decoration: underline;
 }
 
+/* 主內容區 */
 .experience-content {
-  background: white;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  overflow: hidden;
 }
 
 .experience-content-header {
-  background: #6c757d;
-  color: white;
-  padding: 1.5rem 2rem;
-  border-radius: 12px 12px 0 0;
+  background: #1A202C; /* 沉穩極簡黑 */
+  color: #FFFFFF;
+  padding: 1.5rem 2.5rem;
 }
 
-.experience-section-nav {
-  background: #f8f9fa;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.experience-section-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.experience-content-header h2 {
   margin: 0;
-  padding: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.experience-section-nav a {
-  text-decoration: none;
-  color: #666;
-  font-weight: 500;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.experience-section-nav a.active {
-  color: #007bff;
-  border-bottom-color: #007bff;
-}
-
-.experience-section-nav a:hover:not(.active) {
-  color: #007bff;
-  opacity: 0.7;
-}
-
-.experience-section {
-  display: none;
-  /* padding: 2rem; */
-}
-
-.experience-section.active {
-  display: block;
+.experience-body {
+  padding: 2.5rem;
 }
 
 .experience-section-title {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  color: #1A202C;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #E2E8F0;
+  letter-spacing: -0.01em;
+}
+
+.experience-section-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Experience Items Typography */
+.experience-item {
   margin-bottom: 2rem;
-  color: #2c3e50;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .experience-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .position-title {
-  color: #007bff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  color: #1A202C;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem 0;
+  letter-spacing: -0.01em;
 }
 
 .company-info {
-  color: #666;
-  font-style: italic;
-  margin-bottom: 0.5rem;
+  color: #4A5568;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0 0 0.25rem 0;
 }
 
 .duration {
-  color: #28a745;
-  font-weight: 500;
-  font-size: 0.9rem;
+  color: #718096;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.experience-description {
-  color: #555;
-  line-height: 1.6;
-}
-
-ul {
-    padding-left: 20px; /* 保持縮排 */
-    margin: 0; /* 拿掉不必要的上下外距 */
-}
-
+/* 經典極簡 Bullet Points */
 .experience-description ul {
-  margin-left: 1.5rem;
-  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0 0;
+  list-style-type: disc;
 }
 
 .experience-description li {
-  margin-bottom: 0.5rem;
-}
-
-/* Teaching Experience specific styles */
-.course-title {
-  color: #000102fb;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 0.3rem;
-}
-
-.course-code {
-  color: #28a745;
-  font-weight: 500;
-  font-size: 0.9rem;
-  margin-bottom: 0.3rem;
-}
-
-.semester {
-  color: #6c757d;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.responsibilities {
-  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  color: #4A5568;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .experience-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .experience-sidebar {
     position: static;
   }
 
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .experience-section-nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
+  .experience-body {
+    padding: 1.5rem;
   }
 }
 </style>
@@ -232,13 +217,7 @@ ul {
   <aside class="experience-sidebar">
     <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
-    <p class="sidebar-profile-title">
-      Undergraduate student @ NTU <br>
-      Specializing in: <br>
-      ▪️Robotics for sensing, localization, and trajectory planning <br>
-      ▪️Vehicle dynamics & modeling <br>
-      ▪️Medical device prototyping & validation
-    </p>
+    <p class="sidebar-profile-title">M.S. Student @ CMU ME</p>
     <ul class="sidebar-contact-info">
       <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
       <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
@@ -247,136 +226,89 @@ ul {
     </ul>
   </aside>
 
-
   <!-- Main Content -->
   <main class="experience-content">
     <div class="experience-content-header">
-      <h2><i class="fa-solid fa-briefcase"></i> Relative Experience</h2>
+      <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
     </div>
 
-    <!-- <nav class="experience-section-nav">
-      <ul>
-        <li><a href="#research" class="nav-link active" data-target="research">Research Experience</a></li>
-        <li><a href="#teaching" class="nav-link" data-target="teaching">Teaching Experience</a></li>
-        <li><a href="#working" class="nav-link" data-target="working">Working Experience</a></li>
-      </ul>
-    </nav> -->
+    <div class="experience-body">
+      <!-- Research Experience Section -->
+      <h3 class="experience-section-title">Research Experience</h3>
 
-    <!-- Research Experience Section -->
-    <h3 class="experience-section-title">Research Experience</h3>
-    <ul>
-        <li>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="position-title">System Optimization Laboratory, National Taiwan University</h4>
-                    <p class="company-info">Undergraduate Researcher (Advisor: Prof. Kuei-Yuan Chan)</p>
-                    <p class="duration">(Sep. 2024 – Present)</p>
-                </div>
-                <div class="experience-description">
-                    <ul>
-                        <li class="project-item"><strong>Project</strong>: Experimental Platform of a Scaled Autonomous Robotic Straddle Carrier for Port Operation Studies</li>
-                    </ul>
-                    <ul>
-                        <li class="project-item"><strong>Project</strong>: Foxtron Vehicle Technologies Industry-Academia Collaboration Project</li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="position-title">Smart and Advanced Manufacturing Laboratory, National Taiwan University</h4>
-                    <p class="company-info">Undergraduate Researcher (Advisor: Prof. Dian-Ru Li)</p>
-                    <p class="duration">(Oct. 2022 – Present)</p>
-                </div>
-                <div class="experience-description">
-                    <ul>
-                        <li class="project-item"><strong>Project</strong>: Double Lumen Catheter Stabilizer (Collaborator: Taipei Medical University)</li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="position-title">NTU Racing (Formula SAE), National Taiwan University</h4>
-                    <p class="company-info">Head of Aerodynamics Department</p>
-                    <p class="duration">(Jul. 2022 – Jul. 2023)</p>
-                </div>
-                <div class="experience-description">
-                    <ul>
-                        <li class="project-item">Led a team of seven to design and manufacture the aero kits</li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-    </ul>
+      <div class="experience-item">
+        <div class="experience-header">
+          <h4 class="position-title">System Optimization Laboratory, National Taiwan University</h4>
+          <p class="company-info">Undergraduate Researcher (Advisor: Prof. Kuei-Yuan Chan)</p>
+          <p class="duration">Sep. 2024 – Present</p>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li><strong>Scaled Autonomous Straddle Carrier:</strong> Developed a 1:14 scaled experimental platform for container terminal operations and trajectory studies.</li>
+            <li><strong>Foxtron Vehicle Technologies Collaboration:</strong> Industry-academia partnership focusing on vehicle dynamics and control modeling.</li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Teaching Experience Section -->
-    <h3 class="experience-section-title">Teaching Experience (Teaching Assistant)</h3>
-    <ul>
-      <li class="course-title">ME5024 Design and Practice of Intelligent Vehicles (I) (Fall 2025), National Taiwan University</li>
-    </ul>
-    <ul>
-      <li class="course-title">ME5025 Design and Practice of Intelligent Vehicles (II) (Spring 2024), National Taiwan University</li>
-    </ul>
+      <div class="experience-item">
+        <div class="experience-header">
+          <h4 class="position-title">Smart and Advanced Manufacturing Laboratory, National Taiwan University</h4>
+          <p class="company-info">Undergraduate Researcher (Advisor: Prof. Dian-Ru Li)</p>
+          <p class="duration">Oct. 2022 – Present</p>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li><strong>Double Lumen Catheter Stabilizer:</strong> Collaborated with Taipei Medical University on medical device prototyping and validation.</li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Working Experience Section -->
-    <h3 class="experience-section-title">Working Experience</h3>
-    <ul>
-        <li>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h4 class="position-title">New Product Introduction, Garmin Corporation</h4>
-                    <p class="company-info">Engineer Intern</p>
-                    <p class="duration">(Jul. 2024 – Jan. 2025)</p>
-                </div>
-                <div class="experience-description">
-                    <ul>
-                        <li class="project-item"><strong>Pressing Process Standardization</strong>: Standardized assembly processes for handheld device displays, achieving at least IPX7 waterproof standards</li>
-                    </ul>
-                    <ul>
-                        <li class="project-item"><strong>GPSMAP H1 accessory</strong>: Executed manufacturing process design using Therblig analysis, process failure mode and effects analysis(PFMEA), and fixture development</li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-    </ul>
+      <div class="experience-item">
+        <div class="experience-header">
+          <h4 class="position-title">NTU Racing (Formula SAE), National Taiwan University</h4>
+          <p class="company-info">Aerodynamics Team Lead</p>
+          <p class="duration">Jul. 2022 – Jul. 2023</p>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li>Led a 7-person engineering team to design, simulate, and manufacture high-performance carbon fiber aero kits.</li>
+          </ul>
+        </div>
+      </div>
 
+      <!-- Working Experience Section -->
+      <h3 class="experience-section-title">Working Experience</h3>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h4 class="position-title">Garmin Corporation</h4>
+          <p class="company-info">NPI Engineer Intern</p>
+          <p class="duration">Jul. 2024 – Jan. 2025</p>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li><strong>Pressing Process Standardization:</strong> Standardized assembly processes for handheld device displays to meet IPX7 waterproof standards.</li>
+            <li><strong>GPSMAP Accessory Development:</strong> Executed manufacturing process design using Therblig analysis, PFMEA, and custom fixture development.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Teaching Experience Section -->
+      <h3 class="experience-section-title">Teaching Experience</h3>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h4 class="position-title">Teaching Assistant, National Taiwan University</h4>
+          <p class="company-info">Department of Mechanical Engineering</p>
+        </div>
+        <div class="experience-description">
+          <ul>
+            <li><strong>ME5024: Design and Practice of Intelligent Vehicles (I)</strong> — Fall 2025</li>
+            <li><strong>ME5025: Design and Practice of Intelligent Vehicles (II)</strong> — Spring 2024</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </main>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = document.querySelectorAll('.experience-section');
-  
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Remove active class from all links and sections
-      navLinks.forEach(l => l.classList.remove('active'));
-      sections.forEach(s => s.classList.remove('active'));
-      
-      // Add active class to clicked link
-      this.classList.add('active');
-      
-      // Show corresponding section
-      const targetId = this.getAttribute('data-target');
-      const targetSection = document.getElementById(targetId);
-      if (targetSection) {
-        targetSection.classList.add('active');
-      }
-      
-      console.log('Switched to:', targetId);
-    });
-  });
-});
-
-</script>
-
-
-
-
-
