@@ -8,8 +8,142 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    /* ==========================================
+       Monochrome Dark Mode Extensions
+       ========================================== */
+    
+    /* 深色模式按鈕樣式 */
+    .theme-toggle-btn {
+      background: none;
+      border: none;
+      color: #718096;
+      font-size: 1.05rem;
+      cursor: pointer;
+      padding: 4px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s ease, transform 0.2s ease;
+      margin-left: 10px;
+    }
+
+    .theme-toggle-btn:hover {
+      color: #1A202C;
+      transform: scale(1.1);
+    }
+
+    /* Dark Mode Theme Variables & Styles */
+    body.dark-mode {
+      background-color: #0D1117 !important;
+      color: #E6EDF3 !important;
+    }
+
+    /* Top Nav Dark Mode */
+    body.dark-mode .top-nav {
+      background: rgba(13, 17, 23, 0.95) !important;
+      border-bottom-color: #30363D !important;
+    }
+
+    body.dark-mode .nav-name,
+    body.dark-mode .sidebar-profile-name,
+    body.dark-mode .position-title,
+    body.dark-mode .experience-section-title,
+    body.dark-mode .pub-title,
+    body.dark-mode .inline-link {
+      color: #F0F6FC !important;
+    }
+
+    body.dark-mode .nav-right a,
+    body.dark-mode .nav-title,
+    body.dark-mode .sidebar-profile-title,
+    body.dark-mode .company-info,
+    body.dark-mode .duration,
+    body.dark-mode .pub-venue,
+    body.dark-mode .follow-links a,
+    body.dark-mode .theme-toggle-btn {
+      color: #8B949E !important;
+    }
+
+    body.dark-mode .nav-right a:hover,
+    body.dark-mode .nav-right a.active,
+    body.dark-mode .theme-toggle-btn:hover,
+    body.dark-mode .sidebar-contact-info a:hover {
+      color: #F0F6FC !important;
+    }
+
+    body.dark-mode .nav-right a::after {
+      background-color: #F0F6FC !important;
+    }
+
+    /* Card & Container Dark Mode */
+    body.dark-mode .experience-sidebar,
+    body.dark-mode .experience-content {
+      background: #161B22 !important;
+      border-color: #30363D !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    body.dark-mode .sidebar-profile-pic {
+      border-color: #0D1117 !important;
+    }
+
+    body.dark-mode .experience-content-header {
+      background: #21262D !important;
+      border-bottom: 1px solid #30363D !important;
+    }
+
+    body.dark-mode p,
+    body.dark-mode li,
+    body.dark-mode .sidebar-contact-info li,
+    body.dark-mode .sidebar-contact-info a {
+      color: #C9D1D9 !important;
+    }
+
+    body.dark-mode .sidebar-contact-info i {
+      color: #8B949E !important;
+    }
+
+    body.dark-mode .experience-section-title,
+    body.dark-mode .experience-item,
+    body.dark-mode .footer {
+      border-color: #30363D !important;
+      background-color: #0D1117 !important;
+    }
+
+    /* Buttons Dark Mode Adjustment */
+    body.dark-mode .cv-button {
+      background-color: #F0F6FC !important;
+      color: #0D1117 !important;
+    }
+
+    body.dark-mode .cv-button:hover {
+      background-color: #C9D1D9 !important;
+    }
+
+    body.dark-mode .social-btn {
+      background-color: #21262D !important;
+      color: #F0F6FC !important;
+      border-color: #30363D !important;
+    }
+
+    body.dark-mode .social-btn:hover {
+      background-color: #30363D !important;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- 防閃爍腳本：在頁面渲染前立刻套用主題偏好 -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.body.classList.add('dark-mode');
+      }
+    })();
+  </script>
 
   <!-- 頂部導航欄 -->
   <nav class="top-nav">
@@ -21,6 +155,11 @@
       <a href="{{ '/experience/' | relative_url }}" {% if page.url == '/experience/' %}class="active"{% endif %}>Experience</a>
       <a href="{{ '/publications/' | relative_url }}" {% if page.url == '/publications/' %}class="active"{% endif %}>Publications</a>
       <a href="{{ '/beyond/' | relative_url }}" {% if page.url == '/beyond/' %}class="active"{% endif %}>Beyond</a>
+      
+      <!-- 深色模式切換按鈕 -->
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </button>
     </div>
   </nav>
 
@@ -45,7 +184,34 @@
     </div>
   </footer>
 
+  <!-- 切換腳本 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+
+      function updateIcon() {
+        if (document.body.classList.contains('dark-mode')) {
+          themeIcon.classList.remove('fa-moon');
+          themeIcon.classList.add('fa-sun');
+        } else {
+          themeIcon.classList.remove('fa-sun');
+          themeIcon.classList.add('fa-moon');
+        }
+      }
+
+      // 初始化按鈕圖示
+      updateIcon();
+
+      // 切換按鈕點擊事件
+      toggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateIcon();
+      });
+    });
+  </script>
+
 </body>
-
 </html>
-
