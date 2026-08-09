@@ -215,7 +215,7 @@ body {
       <!-- Endurance & Marathon Section -->
       <h3 class="experience-section-title">Endurance & Marathon</h3>
       <p style="line-height: 1.7; color: #4A5568;">
-        I am a dedicated long-distance runner and marathon enthusiast. Distance running has shaped my mental toughness, grit, and self-discipline—qualities that I bring directly into my engineering research and problem-solving mindset. 
+        I am a dedicated long-distance runner and marathon enthusiast. Distance running shapes my mental toughness and self-discipline, keeping me persistent and enthusiastic in both my engineering research and problem-solving. 
       </p>
       <p style="line-height: 1.7; color: #4A5568;">
         Always happy to connect with fellow runners and athletes!
