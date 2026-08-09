@@ -25,7 +25,7 @@ body {
   column-gap: 2.5rem;
 }
 
-/* 側邊欄卡片化（完全對齊 home & experience） */
+/* 側邊欄卡片化 */
 .experience-sidebar {
   background: #FFFFFF;
   border-radius: 10px;
@@ -130,8 +130,8 @@ body {
 .experience-section-title {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2.25rem;
   color: #1A202C;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
@@ -142,17 +142,34 @@ body {
   margin-top: 0;
 }
 
-/* Beyond Page Specific Items */
-.beyond-item {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #F1F5F9;
+/* Social Buttons */
+.social-links-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
 }
 
-.beyond-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #F8F9FA;
+  color: #1A202C !important;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: 1px solid #E2E8F0;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-btn:hover {
+  background-color: #1A202C;
+  color: #FFFFFF !important;
+  border-color: #1A202C;
+  transform: translateY(-1px);
 }
 
 /* Responsive Design */
@@ -195,11 +212,34 @@ body {
     </div>
 
     <div class="experience-body">
-      <!-- Hobbies & Interests Section -->
+      <!-- Endurance & Marathon Section -->
       <h3 class="experience-section-title">Endurance & Marathon</h3>
-      
       <p style="line-height: 1.7; color: #4A5568;">
-        To be updated...
+        I am a dedicated long-distance runner and marathon enthusiast. Distance running has shaped my mental toughness, grit, and self-discipline—qualities that I bring directly into my engineering research and problem-solving mindset. 
+      </p>
+      <p style="line-height: 1.7; color: #4A5568;">
+        Always happy to connect with fellow runners and athletes!
+      </p>
+      
+      <div class="social-links-container">
+        <a href="https://www.strava.com/athletes/kaihuaw" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <i class="fa-brands fa-strava"></i> Connect on Strava
+        </a>
+        <a href="https://www.instagram.com/kelvin__wang_/" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <i class="fa-brands fa-instagram"></i> Follow on Instagram
+        </a>
+      </div>
+
+      <!-- Badminton & Leadership Section -->
+      <h3 class="experience-section-title">Badminton & Leadership</h3>
+      <p style="line-height: 1.7; color: #4A5568;">
+        Badminton is my go-to sport for agility, quick decision-making, and high-intensity competition. Beyond playing, I served as the <strong>President of the National Taiwan University Badminton Club</strong>, managing club operations, organizing large-scale tournaments, and fostering a strong community for student athletes.
+      </p>
+
+      <!-- Motorsport & F1 Section -->
+      <h3 class="experience-section-title">Motorsport & Formula 1</h3>
+      <p style="line-height: 1.7; color: #4A5568;">
+        My passion for vehicle dynamics extends beyond research into motorsport. I am an avid follower of Formula 1 and a dedicated fan of <strong>Sir Lewis Hamilton</strong>—admiring both his relentless drive on track and his influence off it. Having previously served as the Aerodynamics Lead for Formula Student Taiwan, I deeply appreciate the cutting-edge engineering and strategy behind every race weekend.
       </p>
 
     </div>
