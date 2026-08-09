@@ -1,150 +1,88 @@
-/* ==========================================
-   Suguru Osako Inspired Monochrome Style
-   ========================================== */
+---
+layout: default
+title: Home
+permalink: /
+---
 
-/* 全域設定 */
+<!-- 引入 JetBrains Mono 等寬字體（點綴時間與標籤） -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+/* Home Monochrome Styles - Refined Sharpness */
+
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #F8F9FA;
   color: #2D3748;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   margin: 0;
-  background-color: #F8F9FA; /* 冷冽高級灰白底色 */
-  -webkit-font-smoothing: antialiasing; /* 讓字體邊緣纖細銳利 */
+  -webkit-font-smoothing: antialiasing;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 頂部導航欄 (Top Navigation Bar) */
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #E2E8F0;
-  background: rgba(248, 249, 250, 0.95); /* 與背景同色，搭配毛玻璃效果 */
-  backdrop-filter: blur(8px);
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 20px 40px;
+.experience-container {
+  max-width: 1200px;
+  margin: 3rem auto 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  column-gap: 2.5rem;
+}
+
+/* 側邊欄卡片化 */
+.experience-sidebar {
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 2rem;
+  height: fit-content;
   position: sticky;
-  top: 0;
-  z-index: 1000;
+  top: 120px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
-.nav-left {
-  flex: 0 0 325px;       /* 與 Sidebar 寬度對齊 */
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-name {
-  font-size: 1.15rem;
-  font-weight: 700;      /* 極簡俐落字重 */
-  color: #1A202C;
-  margin: 0;
-  letter-spacing: -0.02em; /* 緊縮字距，增強機甲/工藝感 */
-}
-
-.nav-title {
-  font-size: 0.85rem;
-  color: #718096;
-  margin: 2px 0 0 0;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-}
-
-.nav-right {
-  flex: 1;               /* 佔滿剩餘空間 */
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-}
-
-.nav-right a {
-  color: #718096;
-  text-decoration: none;
-  font-size: 0.95rem;     
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  transition: color 0.2s ease;
-  position: relative;
-  padding: 5px 0;
-}
-
-.nav-right a:hover,
-.nav-right a.active {
-  color: #1A202C;
-}
-
-/* Hover 與 Active 底線效果：沉穩極簡黑線 (#1A202C) 由中間展開 */
-.nav-right a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #1A202C;
-  transition: all 0.25s ease-in-out;
-  transform: translateX(-50%);
-}
-
-.nav-right a:hover::after,
-.nav-right a.active::after {
-  width: 100%;
-}
-
-/* 主內容區容器 */
-.container {
-  display: flex;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 20px 40px;
-}
-
-/* Sidebar 左邊欄 */
-.sidebar {
-  flex: 0 0 300px;   
-  border-right: 1px solid #E2E8F0;
-}
-
-.profile-container {
-  text-align: left;
-  margin: 0;
-}
-
-.profile-pic {
-  border-radius: 12px;   /* 俐落方圓形 */
-  width: 65%;        
-  height: auto;
+.sidebar-profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
   object-fit: cover;
+  object-position: center 20%;
   display: block;
-  margin: 5%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto 1.5rem auto;
+  border: 3px solid #F8F9FA;
 }
 
-.sidebar h1 {
-  font-size: 1.3em;
-  font-weight: 800;
+.sidebar-profile-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
   color: #1A202C;
-  margin: 10px 0;
-  white-space: nowrap;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
 
-.subtitle {
-  font-size: 0.95rem;
+.sidebar-profile-title {
   color: #718096;
-  margin: 5px 0 15px 0;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-family: 'JetBrains Mono', monospace; /* 等寬字體點綴 */
 }
 
-/* 聯絡資訊 */
 .sidebar-contact-info {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar-contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   margin-bottom: 0.8rem;
   font-size: 0.9rem;
   color: #4A5568;
@@ -152,7 +90,6 @@ body {
 
 .sidebar-contact-info i {
   width: 20px;
-  margin-right: 0.5rem;
   color: #718096;
 }
 
@@ -167,143 +104,200 @@ body {
   text-decoration: underline;
 }
 
-.contact p {
-  margin: 5px 0;
-  white-space: nowrap;
+/* 主內容區卡片化 */
+.experience-content {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.8);
   overflow: hidden;
-  text-overflow: ellipsis;
+  padding: 2.5rem;
 }
 
-.contact p a {
-  color: #4A5568;
-  text-decoration: none;
-}
-
-.contact p a:hover {
+.experience-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
   color: #1A202C;
-  text-decoration: underline;
-}
-
-/* 右邊內容區標題 */
-.content h2 {
-  margin-top: 10px;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
-  padding-bottom: 8px;
-  color: #1A202C;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
-.project-item {
-  font-size: 16px;
-  line-height: 1.6;
+.experience-section-title:first-of-type {
+  margin-top: 0;
 }
 
-/* 底部區域 (Footer) */
-.footer {
-  background: #F8F9FA;
-  border-top: 1px solid #E2E8F0;
-  padding: 30px 0;
-  margin-top: 40px;
+/* 經典極簡 Bullet Points */
+ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  list-style-type: disc;
 }
 
-.footer-container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 15px;
+ul li {
+  margin-bottom: 0.5rem;
+  color: #4A5568;
+  line-height: 1.7;
 }
 
-.follow-section {
-  margin-bottom: 20px;
+ul ul {
+  margin-top: 0.25rem;
+  list-style-type: circle;
 }
 
-.follow-title {
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: #1A202C;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em; /* 大寫標題拉開字距，展現高級感 */
-}
-
-.follow-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.follow-links a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+/* 方案 1 點綴：時間與日期標籤改用 JetBrains Mono */
+.date-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
   color: #718096;
-  text-decoration: none;
-  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Resume 按鈕元件 (改為 4px 俐落微直角) */
+.cv-btn-container {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1A202C;
+  color: #FFFFFF !important;
+  padding: 0.65rem 1.25rem;
+  border-radius: 4px; /* 從 6px 改為 4px 微直角，增加硬核工藝感 */
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.cv-button:hover {
+  background-color: #2D3748;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* 簡約連結樣式 */
+.inline-link {
+  color: #1A202C;
+  font-weight: 600;
+  text-decoration: underline;
   transition: color 0.2s ease;
 }
 
-.follow-links a:hover {
-  color: #1A202C;        /* Hover 深黑點綴 */
+.inline-link:hover {
+  color: #718096;
 }
 
-.follow-links i {
-  font-size: 0.9rem;
-}
-
-.last-update,
-.copyright {
-  color: #A0AEC0;
-  font-size: 0.85rem;
-}
-
-.copyright {
-  padding-top: 10px;
-  border-top: 1px solid #E2E8F0;
-}
-
-/* 手機排版 (RWD) */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .top-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-  }
-  
-  .nav-left {
-    margin-left: 0;
-    flex: 0 0 auto;
-  }
-  
-  .nav-right {
-    margin-top: 12px;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  
-  .container {
-    flex-direction: column;
-    padding: 20px;
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
-  .sidebar {
-    border-right: none;
-    border-bottom: 1px solid #E2E8F0;
-    margin-bottom: 20px;
-    padding-right: 0;
+  .experience-sidebar {
+    position: static;
   }
 
-  .content {
-    padding-left: 0;
-  }
-  
-  .footer-container {
-    padding: 0 20px;
-  }
-  
-  .follow-links {
-    gap: 15px;
+  .experience-content {
+    padding: 1.5rem;
   }
 }
+</style>
+
+<!-- Main Container -->
+<div class="experience-container">
+  <!-- Sidebar -->
+  <aside class="experience-sidebar">
+    <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
+    <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
+    <p class="sidebar-profile-title">M.S. STUDENT @ CMU ME</p>
+    <ul class="sidebar-contact-info">
+      <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
+      <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
+      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+      <li><i class="fa-brands fa-linkedin"></i> <a href="{{ site.author.linkedin }}">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="experience-content">
+    <section id="about">
+      <!-- About Me Section -->
+      <h3 class="experience-section-title">About Me</h3>
+      <p style="line-height: 1.7; color: #4A5568;">
+        Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
+      </p>
+      <p style="line-height: 1.7; color: #4A5568;">
+        My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
+      </p>
+      <p style="margin-top: 1rem; font-weight: 700; color: #1A202C; letter-spacing: -0.02em;">Research Interests:</p>
+      <ul>
+        <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning and human-aware autonomy</li>
+        <li><strong>Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
+      </ul>
+      <p style="line-height: 1.7; color: #4A5568; margin-top: 1rem;">
+        Outside the lab, I am an active marathon runner and endurance sports enthusiast. I bring the same discipline and persistence from the track to my engineering research.
+      </p>
+      
+      <!-- Resume Button -->
+      <div class="cv-btn-container">
+        <a href="{{ site.baseurl }}/assets/Kai_Hua_Wang_s_CV.pdf" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="cv-button">
+          <i class="fa-solid fa-file-pdf"></i> View Full Resume (PDF)
+        </a>
+      </div>
+
+      <!-- Education Section -->
+      <h3 class="experience-section-title">Education</h3>
+      <ul>
+        <li>
+          <strong>Carnegie Mellon University</strong> — M.S. in Mechanical Engineering
+          <ul>
+            <li class="date-tag">Pittsburgh, PA, USA | Aug. 2026 – May 2028 (Expected)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>National Taiwan University</strong> — B.S. in Mechanical Engineering
+          <ul>
+            <li class="date-tag">Taipei, Taiwan | Sep. 2021 – Jan. 2026</li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Awards and Honors Section -->
+      <h3 class="experience-section-title">Awards and Honors</h3>
+      <p style="line-height: 1.7; color: #4A5568;">
+        🏆 <span class="date-tag">JUL 2023</span> — 
+        <a href="https://www.fstaiwan.net/" 
+           target="_blank"
+           rel="noopener"
+           class="inline-link">
+          Formula Student Taiwan
+        </a> 
+        1st Overall as <strong>Aerodynamics Lead</strong>!
+      </p>
+      <p style="line-height: 1.7; color: #4A5568;">
+        🥈 <span class="date-tag">AUG 2022</span> — 
+        <a href="https://www.fstaiwan.net/" 
+           target="_blank"
+           rel="noopener"
+           class="inline-link">
+          Formula Student Taiwan
+        </a> 
+        2nd Overall!
+      </p>
+    </section>
+  </main>
+</div>
