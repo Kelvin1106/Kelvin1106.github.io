@@ -4,8 +4,17 @@ title: Experience
 permalink: /experience/
 ---
 
+<!-- 引入 JetBrains Mono 字體 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
 <style>
 /* Experience Page Monochrome Styles - Refined Sharpness */
+
+html {
+  scroll-behavior: smooth; /* 平滑滾動 */
+}
 
 body {
   background-color: #F8F9FA;
@@ -50,7 +59,7 @@ body {
 
 .sidebar-profile-name {
   font-size: 1.25rem;
-  font-weight: 700;              /* 降低字重，擺脫臃腫感 */
+  font-weight: 700;
   margin-bottom: 0.25rem;
   color: #1A202C;
   letter-spacing: -0.02em;
@@ -60,11 +69,12 @@ body {
 .sidebar-profile-title {
   color: #718096;
   margin-bottom: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   text-align: center;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .sidebar-contact-info {
@@ -123,26 +133,53 @@ body {
   gap: 0.75rem;
 }
 
+/* 極簡快速導航目錄 (Quick Navigation Bar) */
+.experience-quick-nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 2.5rem;
+  background-color: #F8F9FA;
+  border-bottom: 1px solid #E2E8F0;
+  flex-wrap: wrap;
+}
+
+.experience-quick-nav a {
+  color: #718096;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-family: 'JetBrains Mono', monospace;
+  transition: color 0.2s ease;
+}
+
+.experience-quick-nav a:hover {
+  color: #1A202C;
+  text-decoration: underline;
+}
+
 .experience-body {
   padding: 2.5rem;
 }
 
+/* 標題與錨點防頂部遮擋 */
 .experience-section-title {
   font-size: 1.25rem;
-  font-weight: 700;              /* 700 比原本的 800 銳利很多 */
+  font-weight: 700;
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
   color: #1A202C;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #E2E8F0;
   letter-spacing: -0.02em;
+  scroll-margin-top: 100px; /* 關鍵：防被 Sticky Nav 遮住 */
 }
 
 .experience-section-title:first-of-type {
   margin-top: 0;
 }
 
-/* Experience Items Typography - 關鍵精修區塊 */
+/* Experience Items */
 .experience-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
@@ -159,10 +196,9 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* 核心修正：機構/實驗室名稱降低粗細，線條變得極度俐落 */
 .position-title {
   color: #1A202C;
-  font-weight: 700;              /* 從原本臃腫的 800 改為精緻俐落的 600 */
+  font-weight: 700;
   font-size: 1.05rem;
   margin: 0 0 0.35rem 0;
   letter-spacing: -0.01em;
@@ -181,11 +217,10 @@ body {
   font-weight: 600;
   font-size: 0.8rem;
   margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;        /* 時間改為小大寫 + 寬字距，展現高科技質感 */
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.02em;
 }
 
-/* 經典極簡 Bullet Points */
 .experience-description ul {
   padding-left: 1.2rem;
   margin: 0.5rem 0 0 0;
@@ -197,6 +232,18 @@ body {
   color: #4A5568;
   line-height: 1.6;
   font-size: 0.95rem;
+}
+
+/* 深色模式相容 */
+body.dark-mode .experience-quick-nav {
+  background-color: #161B22;
+  border-bottom-color: #30363D;
+}
+body.dark-mode .experience-quick-nav a {
+  color: #8B949E;
+}
+body.dark-mode .experience-quick-nav a:hover {
+  color: #F0F6FC;
 }
 
 /* Responsive Design */
@@ -211,6 +258,11 @@ body {
     position: static;
   }
 
+  .experience-quick-nav {
+    padding: 0.75rem 1.5rem;
+    gap: 1rem;
+  }
+
   .experience-body {
     padding: 1.5rem;
   }
@@ -223,7 +275,7 @@ body {
   <aside class="experience-sidebar">
     <img src="{{ site.baseurl }}/assets/profile.png" alt="Profile photo" class="sidebar-profile-pic">
     <h3 class="sidebar-profile-name">Kai-Hua (Kelvin) Wang</h3>
-    <p class="sidebar-profile-title">M.S. Student @ CMU ME</p>
+    <p class="sidebar-profile-title">M.S. STUDENT @ CMU ME</p>
     <ul class="sidebar-contact-info">
       <li><i class="fa-solid fa-building"></i> {{ site.author.employer }}</li>
       <li><i class="fa-solid fa-location-dot"></i> {{ site.author.location }}</li>
@@ -238,15 +290,22 @@ body {
       <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
     </div>
 
+    <!-- 極簡快速目錄 -->
+    <div class="experience-quick-nav">
+      <a href="#research">// 01. RESEARCH</a>
+      <a href="#working">// 02. WORKING</a>
+      <a href="#teaching">// 03. TEACHING</a>
+    </div>
+
     <div class="experience-body">
       <!-- Research Experience Section -->
-      <h3 class="experience-section-title">Research Experience</h3>
+      <h3 id="research" class="experience-section-title">Research Experience</h3>
 
       <div class="experience-item">
         <div class="experience-header">
           <h4 class="position-title">System Optimization Laboratory, National Taiwan University</h4>
           <p class="company-info">Undergraduate Researcher (Advisor: Prof. Kuei-Yuan Chan)</p>
-          <p class="duration">Sep. 2024 – Jan. 2026</p>
+          <p class="duration">SEP. 2024 – JAN. 2026</p>
         </div>
         <div class="experience-description">
           <ul>
@@ -260,7 +319,7 @@ body {
         <div class="experience-header">
           <h4 class="position-title">Smart and Advanced Manufacturing Laboratory, National Taiwan University</h4>
           <p class="company-info">Undergraduate Researcher (Advisor: Prof. Dian-Ru Li)</p>
-          <p class="duration">Oct. 2022 – Jan. 2026</p>
+          <p class="duration">OCT. 2022 – JAN. 2026</p>
         </div>
         <div class="experience-description">
           <ul>
@@ -273,7 +332,7 @@ body {
         <div class="experience-header">
           <h4 class="position-title">NTU Racing (Formula SAE), National Taiwan University</h4>
           <p class="company-info">Aerodynamics Team Lead</p>
-          <p class="duration">Jul. 2022 – Jul. 2023</p>
+          <p class="duration">JUL. 2022 – JUL. 2023</p>
         </div>
         <div class="experience-description">
           <ul>
@@ -283,13 +342,13 @@ body {
       </div>
 
       <!-- Working Experience Section -->
-      <h3 class="experience-section-title">Working Experience</h3>
+      <h3 id="working" class="experience-section-title">Working Experience</h3>
 
       <div class="experience-item">
         <div class="experience-header">
           <h4 class="position-title">Garmin Corporation</h4>
           <p class="company-info">NPI Engineer Intern</p>
-          <p class="duration">Jul. 2024 – Jan. 2025</p>
+          <p class="duration">JUL. 2024 – JAN. 2025</p>
         </div>
         <div class="experience-description">
           <ul>
@@ -300,7 +359,7 @@ body {
       </div>
 
       <!-- Teaching Experience Section -->
-      <h3 class="experience-section-title">Teaching Experience</h3>
+      <h3 id="teaching" class="experience-section-title">Teaching Experience</h3>
 
       <div class="experience-item">
         <div class="experience-header">
