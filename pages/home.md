@@ -219,16 +219,16 @@ ul ul {
     <section id="about">
       <!-- About Me Section -->
       <h3 class="experience-section-title">About Me</h3>
-      <p style="line-height: 1.7; color: #4A5568;">
-        Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an incoming M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
+<p style="line-height: 1.7; color: #4A5568;">
+        Hello! I'm <strong>Kai-Hua (Kelvin) Wang</strong>, an M.S. student in Mechanical Engineering (Research Track) at <strong>Carnegie Mellon University</strong>. I hold a B.S. in Mechanical Engineering from <strong>National Taiwan University</strong>.
       </p>
       <p style="line-height: 1.7; color: #4A5568;">
-        My research focuses on <strong>control theory, optimization, and robotics</strong> to build safe, agile, and intelligent autonomous systems.
+        My research focuses on <strong>computational design methodology, optimization, and robotics</strong> to develop trustworthy, safe, and intelligent physical systems.
       </p>
       <p style="margin-top: 1rem; font-weight: 700; color: #1A202C; letter-spacing: -0.02em;">Research Interests:</p>
       <ul>
-        <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning and human-aware autonomy</li>
-        <li><strong>Dynamics & Control:</strong> State estimation and learning-enhanced modeling for physical platforms</li>
+        <li><strong>Computational Design & Optimization:</strong> Learning-enhanced mechanism synthesis, graph grammars, and deterministic global optimization.</li>
+        <li><strong>Safe & Agile Autonomous Systems:</strong> Safety-critical planning, state estimation, and physical platform integration.</li>
       </ul>
       <p style="line-height: 1.7; color: #4A5568; margin-top: 1rem;">
         Outside the lab, I am an active marathon runner and endurance sports enthusiast. I bring the same discipline and persistence from the track to my engineering research.
